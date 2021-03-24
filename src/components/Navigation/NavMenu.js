@@ -7,7 +7,7 @@ import ToggleTheme from './ToggleTheme';
 const StyledNavMenu = styled.nav`
   display: flex;
   a {
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
   .active {
     color: var(--red);
@@ -43,6 +43,9 @@ const NavToggle = styled.button`
   @media screen and (max-width: 834px) {
     display: flex;
     margin-left: 2rem;
+  }
+  :hover {
+    color: var(--red);
   }
 `;
 

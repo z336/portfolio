@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
   @media screen and (min-width: 834px) {
     ul {
       li {
-        padding-right: 1rem;
+        padding-right: 3rem;
         :last-child {
           padding-right: 0;
           margin-left: auto;

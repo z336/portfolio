@@ -28,6 +28,11 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--white);
   }
 
+  @media (prefers-color-scheme: dark) {
+    background: var(--black);
+    color: var(--white);
+  }
+
   nav, footer {
     ul{
       list-style: none;
@@ -44,6 +49,11 @@ export const GlobalStyles = createGlobalStyle`
   a:hover {
     color: var(--red);
   }
+
+  a:focus, button:focus {
+  outline: 3px dashed var(--red);
+  z-index: 99;
+}
 `;
 
 export default GlobalStyles;

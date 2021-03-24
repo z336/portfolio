@@ -8,6 +8,9 @@ const StyledButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  :hover {
+    color: var(--red);
+  }
 `;
 
 export default function ToggleTheme() {
