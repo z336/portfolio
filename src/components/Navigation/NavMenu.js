@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { FaMoon, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import NavLinks from './NavLinks';
+import ToggleTheme from './ToggleTheme';
 
 const StyledNavMenu = styled.nav`
   display: flex;
@@ -18,19 +19,25 @@ const NavContainer = styled.div`
   @media (max-width: 834px) {
     flex-direction: column;
     position: fixed;
-    width: 65%;
+    width: 75%;
     height: 100%;
-    padding: 3rem 0 0 1rem;
+    padding: 3rem 0 0 2rem;
     background-color: var(--black);
     color: var(--white);
     transition: all 0.1s ease-in;
     top: 0;
     left: ${(props) => (props.open ? '-100%' : '0')};
     z-index: 99;
+    a {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
-const NavToggle = styled.div`
+const NavToggle = styled.button`
+  color: inherit;
+  background-color: transparent;
+  border: none;
   display: none;
   cursor: pointer;
   @media screen and (max-width: 834px) {
@@ -52,7 +59,7 @@ export default function NavMenu() {
           <NavLinks />
         </NavContainer>
       )}
-      <FaMoon />
+      <ToggleTheme />
       <NavToggle navOpen={navOpen} onClick={() => setNavOpen(!navOpen)}>
         <FaBars />
       </NavToggle>

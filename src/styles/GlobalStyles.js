@@ -19,6 +19,13 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-size: 2rem;
     overflow-y: scroll;
+    background: var(--white);
+    color: var(--black);
+  }
+
+  body.dark {
+    background: var(--black);
+    color: var(--white);
   }
 
   nav, footer {
