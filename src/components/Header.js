@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { FaLeaf } from 'react-icons/fa';
-import NavMenu from './NavMenu';
+import NavMenu from './Nav/NavMenu';
 
 const StyledHeader = styled.header`
   grid-area: nav;

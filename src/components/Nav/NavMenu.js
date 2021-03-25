@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import NavLinks from './NavLinks';
+import FooterLinks from '../Footer/FooterLinks';
 import ToggleTheme from './ToggleTheme';
 
 const StyledNavMenu = styled.nav`
@@ -21,7 +22,7 @@ const NavContainer = styled.div`
     position: fixed;
     width: 75%;
     height: 100%;
-    padding: 3rem 0 0 2rem;
+    padding: 3rem 3rem 0 2rem;
     background-color: var(--black);
     color: var(--white);
     transition: all 0.1s ease-in;
@@ -29,7 +30,7 @@ const NavContainer = styled.div`
     left: ${(props) => (props.open ? '-100%' : '0')};
     z-index: 99;
     a {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 `;
@@ -50,12 +51,13 @@ const NavToggle = styled.button`
 `;
 
 export default function NavMenu() {
-  const [navOpen, setNavOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <StyledNavMenu>
-      {navOpen ? (
+      {open ? (
         <NavContainer>
           <NavLinks />
+          <FooterLinks />
         </NavContainer>
       ) : (
         <NavContainer open>
@@ -63,7 +65,7 @@ export default function NavMenu() {
         </NavContainer>
       )}
       <ToggleTheme />
-      <NavToggle navOpen={navOpen} onClick={() => setNavOpen(!navOpen)}>
+      <NavToggle navOpen={open} onClick={() => setOpen(!open)}>
         <FaBars />
       </NavToggle>
     </StyledNavMenu>
