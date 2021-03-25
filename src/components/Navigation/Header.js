@@ -6,14 +6,14 @@ import NavMenu from './NavMenu';
 
 const StyledHeader = styled.header`
   grid-area: nav;
-  padding-top: 3rem;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
-  font-size: 4rem;
+  font-size: 1.5rem;
   nav {
     padding-right: 0;
     margin-left: auto;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 `;
 

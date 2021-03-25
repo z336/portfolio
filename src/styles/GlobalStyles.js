@@ -12,12 +12,19 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
-    font-size: 10px;
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(18px + 2 * ((100vw - 320px) / 680));
+    }
+  }
+
+  @media screen and (min-width: 834px) {
+    html {
+      font-size: 22px;
+    }
   }
 
   body {
-    font-size: 2rem;
     overflow-y: scroll;
     background: var(--white);
     color: var(--black);

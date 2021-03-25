@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const StyledFooter = styled.footer`
   grid-area: footer;
   grid-row: 3/4;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
   ul {
     display: flex;
   }
@@ -15,8 +15,10 @@ const StyledFooter = styled.footer`
     ul {
       flex-direction: column;
       li {
+        margin-bottom: 0.75rem;
         :last-child {
           margin-top: 5rem;
+          margin-bottom: 0;
         }
       }
     }
