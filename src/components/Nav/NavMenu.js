@@ -7,11 +7,14 @@ import ToggleTheme from './ToggleTheme';
 
 const StyledNavMenu = styled.nav`
   display: flex;
-  a {
-    margin-right: 3rem;
-  }
   .active {
     color: var(--red);
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    margin-right: 3rem;
   }
 `;
 
@@ -25,11 +28,20 @@ const NavContainer = styled.div`
     padding: 3rem 3rem 0 2rem;
     background-color: var(--black);
     color: var(--white);
+    border-right: 3px var(--red) dotted;
     transition: all 0.1s ease-in;
     top: 0;
     left: ${(props) => (props.open ? '-100%' : '0')};
     z-index: 99;
-    a {
+    ul {
+      flex-direction: column;
+      :last-child {
+        font-size: 1rem;
+        padding-bottom: 3rem;
+        margin-top: auto;
+      }
+    }
+    li {
       margin-bottom: 1rem;
     }
   }
