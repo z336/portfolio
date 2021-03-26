@@ -14,6 +14,7 @@ const StyledHeader = styled.header`
     padding-right: 0;
     margin-left: auto;
     font-size: 1.5rem;
+    z-index: 99;
   }
 `;
 

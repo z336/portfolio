@@ -28,7 +28,6 @@ const NavContainer = styled.div`
     padding: 3rem 3rem 0 2rem;
     background-color: var(--black);
     color: var(--white);
-    border-right: 3px var(--red) dotted;
     transition: all 0.1s ease-in;
     top: 0;
     left: ${(props) => (props.open ? '-100%' : '0')};

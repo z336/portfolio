@@ -20,8 +20,8 @@ export default function NavLinks() {
         </Link>
       </li>
       <li>
-        <Link to="/blog" activeClassName="active">
-          Blog
+        <Link to="/words" activeClassName="active">
+          Words
         </Link>
       </li>
     </ul>

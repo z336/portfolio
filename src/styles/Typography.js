@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import headerFont from '../assets/fonts/Poppins-Bold.ttf';
-import bodyFont from '../assets/fonts/RobotoSlab-VariableFont_wght.ttf';
+import bodyFont from '../assets/fonts/AlteHaasGroteskRegular.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {
@@ -10,25 +10,18 @@ const Typography = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'RobotoSlab';
+    font-family: 'AlteHaasGroteskRegular';
     src: url(${bodyFont});
   }
 
   body {
-    font-family: 'RobotoSlab', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
   }
 
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  header,
-  nav,
-  footer {
+  header {
     font-family: 'PoppinsBold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
       sans-serif;
