@@ -34,8 +34,13 @@ const NavContainer = styled.div`
     z-index: 99;
     ul {
       flex-direction: column;
+      font-size: 2rem;
       :last-child {
+        font-family: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
         font-size: 1rem;
+        text-transform: none;
         padding-bottom: 3rem;
         margin-top: auto;
       }

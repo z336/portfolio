@@ -56,7 +56,7 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--red);
   }
 
-  a:focus, button:focus {
+  a:focus, li:focus, button:focus {
   outline: 3px dashed var(--red);
   z-index: 99;
 }

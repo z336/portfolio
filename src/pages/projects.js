@@ -11,7 +11,7 @@ const StyledSection = styled(Section)`
   ul {
     list-style: none;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     p {
       margin-bottom: 1rem;
     }
@@ -44,22 +44,18 @@ export default function ProjectIndex({ data }) {
         <StyledSection>
           <ul>
             {posts.map(({ node: post }) => (
-              <div>
-                <li key={post.id}>
-                  <Link to={post.fields.slug}>
-                    <GatsbyImage
-                      image={
-                        post.frontmatter.img.childImageSharp.gatsbyImageData
-                      }
-                      alt="A project screenshot"
-                      className="image"
-                    ></GatsbyImage>
-                  </Link>
-                  <h3>{post.frontmatter.title}</h3>
-                  <p>{post.frontmatter.description}</p>
-                  <Button>Read More</Button>
-                </li>
-              </div>
+              <li key={post.id}>
+                <Link to={post.fields.slug}>
+                  <GatsbyImage
+                    image={post.frontmatter.img.childImageSharp.gatsbyImageData}
+                    alt="A project screenshot"
+                    className="image"
+                  ></GatsbyImage>
+                </Link>
+                <h3>{post.frontmatter.title}</h3>
+                <p>{post.frontmatter.description}</p>
+                <Button>Read More</Button>
+              </li>
             ))}
           </ul>
         </StyledSection>
@@ -83,7 +79,7 @@ export const pageQuery = graphql`
             category
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.33)
+                gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.78)
               }
             }
           }

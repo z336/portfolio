@@ -5,9 +5,9 @@ import FooterLinks from './FooterLinks';
 const StyledFooter = styled.footer`
   grid-area: footer;
   grid-row: 3/4;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem 2rem 1rem;
+  background: var(--black);
+  color: var(--white);
   font-size: 1.25rem;
   ul {
     display: flex;

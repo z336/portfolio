@@ -6,23 +6,22 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-mdx`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-smoothscroll`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1200,
             },
           },
         ],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

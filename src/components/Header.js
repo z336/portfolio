@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { FaLeaf } from 'react-icons/fa';
+import { FaPeace } from 'react-icons/fa';
 import NavMenu from './Nav/NavMenu';
 
 const StyledHeader = styled.header`
@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Link to="/">
-        <FaLeaf />
+        <FaPeace />
       </Link>
       <NavMenu />
     </StyledHeader>

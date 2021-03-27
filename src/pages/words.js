@@ -11,6 +11,10 @@ const StyledSection = styled(Section)`
     max-width: 55ch;
     list-style: none;
     margin: 0 auto;
+    @media (min-width: 834px) {
+      padding-left: 1rem;
+      border-left: 3px solid;
+    }
   }
   li {
     margin-bottom: 3rem;
@@ -38,7 +42,7 @@ export default function BlogIndex({ data }) {
               <li key={post.id}>
                 <Link to={post.fields.slug}>
                   <h2>{post.frontmatter.title}</h2>
-                  <small>{post.excerpt}</small>
+                  <p>{post.excerpt}</p>
                 </Link>
               </li>
             ))}
