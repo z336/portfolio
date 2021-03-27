@@ -17,6 +17,9 @@ const StyledSection = styled(Section)`
     @media (min-width: 834px) {
       grid-template-columns: repeat(3, 1fr);
     }
+    a {
+      text-decoration: none;
+    }
   }
 `;
 
@@ -26,9 +29,6 @@ const Button = styled.button`
   padding: 0.25rem 1rem;
   border: 3px solid;
   cursor: pointer;
-  :hover {
-    color: var(--red);
-  }
 `;
 
 export default function ProjectIndex({ data }) {
@@ -50,10 +50,10 @@ export default function ProjectIndex({ data }) {
                     alt="A project screenshot"
                     className="image"
                   ></GatsbyImage>
+                  <h3>{post.frontmatter.title}</h3>
+                  <p>{post.frontmatter.description}</p>
+                  <Button>Read More</Button>
                 </Link>
-                <h3>{post.frontmatter.title}</h3>
-                <p>{post.frontmatter.description}</p>
-                <Button>Read More</Button>
               </li>
             ))}
           </ul>

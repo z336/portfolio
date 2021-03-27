@@ -11,7 +11,7 @@ const StyledNavMenu = styled.nav`
     display: flex;
   }
   li {
-    margin-right: 3rem;
+    padding-right: 3rem;
   }
   a {
     text-decoration: none;
@@ -48,6 +48,13 @@ const NavContainer = styled.div`
     li {
       margin-bottom: 1rem;
     }
+    a:hover,
+    .active {
+      background: var(--white);
+      color: var(--black);
+      padding: 0 1rem;
+      margin: 0 -1rem;
+    }
   }
 `;
 
@@ -60,9 +67,6 @@ const NavToggle = styled.button`
   @media screen and (max-width: 834px) {
     display: flex;
     margin-left: 2rem;
-  }
-  :hover {
-    color: var(--red);
   }
 `;
 
