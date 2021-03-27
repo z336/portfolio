@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
@@ -16,7 +15,7 @@ const StyledSection = styled(Section)`
 
 export default function About() {
   return (
-    <Layout>
+    <>
       <Article>
         <Heading>
           <h1>About</h1>
@@ -43,6 +42,6 @@ export default function About() {
           </div>
         </StyledSection>
       </Article>
-    </Layout>
+    </>
   );
 }

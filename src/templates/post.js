@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
@@ -40,7 +39,7 @@ export default function PostTemplate({ data: { mdx } }) {
   const category = mdx.frontmatter.category;
 
   return (
-    <Layout>
+    <>
       <Article>
         <MDXProvider components={shortcodes}>
           <Heading>
@@ -56,7 +55,7 @@ export default function PostTemplate({ data: { mdx } }) {
           </StyledSection>
         </MDXProvider>
       </Article>
-    </Layout>
+    </>
   );
 }
 

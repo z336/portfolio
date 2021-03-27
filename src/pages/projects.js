@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
@@ -36,7 +35,7 @@ export default function ProjectIndex({ data }) {
   const { edges: posts } = data.allMdx;
 
   return (
-    <Layout>
+    <>
       <Article>
         <Heading>
           <h1>Projects</h1>
@@ -60,7 +59,7 @@ export default function ProjectIndex({ data }) {
           </ul>
         </StyledSection>
       </Article>
-    </Layout>
+    </>
   );
 }
 
