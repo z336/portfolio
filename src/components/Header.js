@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   grid-area: nav;
   display: flex;
   align-items: center;
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem 1rem 0.5rem 1rem;
   font-size: 1.5rem;
   nav {
     padding-right: 0;
