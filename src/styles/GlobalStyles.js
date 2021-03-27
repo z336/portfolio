@@ -57,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a:focus, li:focus, button:focus {
-  outline: 3px dashed var(--red);
+  outline: 6px double var(--red);
   z-index: 99;
 }
 `;
