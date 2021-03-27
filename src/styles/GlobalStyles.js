@@ -50,7 +50,6 @@ export const GlobalStyles = createGlobalStyle`
   a,
   a:visited {
     color: inherit;  
-    text-decoration: none;
   }
 
   a:hover {

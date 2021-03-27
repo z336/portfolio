@@ -10,8 +10,8 @@ import Footer from './Footer/Footer';
 
 const Main = styled.main`
   grid-area: main;
-  padding: 3rem 0;
   border-top: solid 6px;
+  border-bottom: solid 4px;
 `;
 
 export default function Layout({ children }) {

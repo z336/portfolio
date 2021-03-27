@@ -5,12 +5,16 @@ import FooterLinks from './FooterLinks';
 const StyledFooter = styled.footer`
   grid-area: footer;
   grid-row: 3/4;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
-  border-top: solid 4px;
+  padding: 0 1rem;
   font-size: 1.25rem;
   ul {
     display: flex;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   @media screen and (max-width: 834px) {

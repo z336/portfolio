@@ -3,8 +3,10 @@ import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Article from '../styles/Article';
+import Heading from '../styles/Heading';
+import Section from '../styles/Section';
 
-const StyledArticle = styled(Article)`
+const StyledSection = styled(Section)`
   ul {
     max-width: 55ch;
     list-style: none;
@@ -12,6 +14,12 @@ const StyledArticle = styled(Article)`
   }
   li {
     margin-bottom: 3rem;
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  a {
+    text-decoration: none;
   }
 `;
 
@@ -20,19 +28,23 @@ export default function BlogIndex({ data }) {
 
   return (
     <Layout>
-      <StyledArticle>
-        <h1>Words</h1>
-        <ul>
-          {posts.map(({ node: post }) => (
-            <li key={post.id}>
-              <Link to={post.fields.slug}>
-                <h1>{post.frontmatter.title}</h1>
-              </Link>
-              <small>{post.excerpt}</small>
-            </li>
-          ))}
-        </ul>
-      </StyledArticle>
+      <Article>
+        <Heading>
+          <h1>Words</h1>
+        </Heading>
+        <StyledSection>
+          <ul>
+            {posts.map(({ node: post }) => (
+              <li key={post.id}>
+                <Link to={post.fields.slug}>
+                  <h2>{post.frontmatter.title}</h2>
+                  <small>{post.excerpt}</small>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </StyledSection>
+      </Article>
     </Layout>
   );
 }

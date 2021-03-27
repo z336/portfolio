@@ -7,14 +7,14 @@ import ToggleTheme from './ToggleTheme';
 
 const StyledNavMenu = styled.nav`
   display: flex;
-  .active {
-    color: var(--red);
-  }
   ul {
     display: flex;
   }
   li {
     margin-right: 3rem;
+  }
+  a {
+    text-decoration: none;
   }
 `;
 

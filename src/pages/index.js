@@ -1,16 +1,19 @@
 import * as React from 'react';
-// import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Article from '../styles/Article';
-
-// const StyledArticle = styled(Article);
+import Heading from '../styles/Heading';
+import Section from '../styles/Section';
 
 export default function IndexPage() {
   return (
     <Layout>
       <Article>
-        <h1>Jon Coleman</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <Heading>
+          <h1>Jon Coleman</h1>
+        </Heading>
+        <Section>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </Section>
       </Article>
     </Layout>
   );

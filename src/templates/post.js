@@ -6,8 +6,10 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import Article from '../styles/Article';
+import Heading from '../styles/Heading';
+import Section from '../styles/Section';
 
-const StyledArticle = styled(Article)`
+const StyledSection = styled(Section)`
   max-width: 55ch;
   margin: 0 auto;
 
@@ -25,12 +27,6 @@ const StyledArticle = styled(Article)`
     padding-left: 2em;
   }
 
-  p,
-  ol,
-  ul {
-    margin: 0 0 2rem;
-  }
-
   .arrows {
     font-size: 2rem;
   }
@@ -41,20 +37,25 @@ const shortcodes = { Link };
 export default function PostTemplate({ data: { mdx } }) {
   const title = mdx.frontmatter.title;
   const body = mdx.body;
-  const back = mdx.frontmatter.category;
+  const category = mdx.frontmatter.category;
+
   return (
     <Layout>
-      <StyledArticle>
+      <Article>
         <MDXProvider components={shortcodes}>
-          <h1>{title}</h1>
-          <MDXRenderer>{body}</MDXRenderer>
-          <p className="arrows">
-            <Link to={`/${back}`}>
-              <FaArrowCircleLeft />
-            </Link>
-          </p>
+          <Heading>
+            <h1>{title}</h1>
+          </Heading>
+          <StyledSection>
+            <MDXRenderer>{body}</MDXRenderer>
+            <p className="arrows">
+              <Link to={`/${category}`}>
+                <FaArrowCircleLeft />
+              </Link>
+            </p>
+          </StyledSection>
         </MDXProvider>
-      </StyledArticle>
+      </Article>
     </Layout>
   );
 }
