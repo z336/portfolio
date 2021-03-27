@@ -6,9 +6,9 @@ import NavMenu from './Nav/NavMenu';
 
 const StyledHeader = styled.header`
   grid-area: nav;
-  padding: 2rem 1rem 0 1rem;
   display: flex;
   align-items: center;
+  padding: 2rem 1rem 0 1rem;
   font-size: 1.5rem;
   nav {
     padding-right: 0;

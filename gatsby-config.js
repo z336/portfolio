@@ -45,5 +45,17 @@ module.exports = {
         path: `${__dirname}/src/content/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jon Coleman`,
+        short_name: `Jon Coleman`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/assets/images/icon.png`,
+      },
+    },
   ],
 };
