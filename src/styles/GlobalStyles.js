@@ -75,46 +75,6 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0 -0.5rem;
       }
     }
-
-    h1,
-    header {
-      font-family: var(--header-font);
-      text-transform: uppercase;
-    }
-
-    nav,
-    footer {
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ol,
-    ul,
-    p {
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      transition: all 100ms ease-in-out;
-    }
-
-    a,
-    a:visited {
-      color: inherit;
-    }
-
-    a:focus {
-      outline: 6px double var(--red);
-    }
   }
 
   body.dark {
@@ -136,6 +96,46 @@ export const GlobalStyles = createGlobalStyle`
         }
       }
     }
+  }
+
+  h1,
+  header {
+    font-family: var(--header-font);
+    text-transform: uppercase;
+  }
+
+  nav,
+  footer {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ol,
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    transition: all 100ms ease-in-out;
+  }
+
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+  a:focus {
+    outline: 6px double var(--red);
   }
 `;
 
