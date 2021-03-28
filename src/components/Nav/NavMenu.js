@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import NavLinks from './NavLinks';
 import FooterLinks from '../Footer/FooterLinks';
 import ToggleTheme from './ToggleTheme';
+import useOnClickOutside from '../../utils/useOnClickOutside';
 
 const StyledNavMenu = styled.nav`
   display: flex;
@@ -36,9 +37,7 @@ const NavContainer = styled.div`
       flex-direction: column;
       font-size: 2rem;
       :last-child {
-        font-family: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-          'Helvetica Neue', sans-serif;
+        font-family: var(--body-font);
         font-size: 1rem;
         text-transform: none;
         padding-bottom: 3rem;
@@ -72,11 +71,17 @@ const NavToggle = styled.button`
 
 export default function NavMenu() {
   const [open, setOpen] = useState(false);
+
+  const ref = useRef();
+  useOnClickOutside(ref, () => {
+    if (open) setOpen(false);
+  });
+
   return (
-    <StyledNavMenu>
+    <StyledNavMenu ref={ref}>
       {open ? (
         <NavContainer>
-          <NavLinks />
+          <NavLinks open={open} setOpen={setOpen} />
           <FooterLinks />
         </NavContainer>
       ) : (

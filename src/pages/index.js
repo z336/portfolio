@@ -11,9 +11,7 @@ const StyledSection = styled(Section)`
     padding: 2rem;
     border: 0.5rem solid;
     h2 {
-      font-family: 'PoppinsBold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
+      font-family: var(--header-font);
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 1rem;

@@ -14,17 +14,18 @@ const Typography = createGlobalStyle`
     src: url(${bodyFont});
   }
 
-  body {
-    font-family: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
+  :root {
+  --header-font: 'PoppinsBold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+  --body-font: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
       'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
       'Helvetica Neue', sans-serif;
   }
 
   h1,
   header {
-    font-family: 'PoppinsBold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: var(--header-font);
     text-transform: uppercase;
   }
 
@@ -40,6 +41,11 @@ const Typography = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  body {
+    font-family: var(--body-font);
+  }
+
 `;
 
 export default Typography;
