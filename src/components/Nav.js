@@ -32,7 +32,7 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 834px) {
     font-size: 1rem;
     li {
-      padding-right: 1rem;
+      padding-right: 0.5rem;
       :first-child {
         display: none;
       }
