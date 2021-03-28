@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { ThemeProvider } from '../utils/useTheme';
 import SiteContainer from '../styles/Grids';
 import GlobalStyles from '../styles/GlobalStyles';
-import Typography from '../styles/Typography';
 import Header from './Header';
 import Footer from './Footer/Footer';
 
@@ -19,7 +18,6 @@ export default function Layout({ children }) {
     <ThemeProvider>
       <SiteContainer>
         <GlobalStyles />
-        <Typography />
         <Header />
         <Main>{children}</Main>
         <Footer />

@@ -1,11 +1,31 @@
 import { createGlobalStyle } from 'styled-components';
 
+import headerFont from '../assets/fonts/Poppins-Bold.ttf';
+import bodyFont from '../assets/fonts/AlteHaasGroteskRegular.ttf';
+
 export const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'PoppinsBold';
+    src: url(${headerFont});
+  }
+
+  @font-face {
+    font-family: 'AlteHaasGroteskRegular';
+    src: url(${bodyFont});
+  }
+
   :root {
     --black: #202020;
     --white: #fffffc;
     --red: #ff0000;
+    --header-font: 'PoppinsBold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    --body-font: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
   }
+  
   *,
   *::after,
   *::before {
@@ -25,9 +45,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    overflow-y: scroll;
     background: var(--white);
     color: var(--black);
+    font-family: var(--body-font);
+    overflow-y: scroll;
     button:hover {
       background: var(--black);
       color: var(--white);
@@ -89,6 +110,25 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0 -1rem;
       }
     }
+  }
+
+  h1,
+  header {
+    font-family: var(--header-font);
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ol,
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
   }
 
   nav,
