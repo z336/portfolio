@@ -5,7 +5,7 @@ import { ThemeProvider } from '../utils/useTheme';
 import SiteContainer from '../styles/Grids';
 import GlobalStyles from '../styles/GlobalStyles';
 import Header from './Header';
-import Footer from './Footer/Footer';
+import Footer from './Footer';
 
 const Main = styled.main`
   grid-area: main;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTheme } from '../../utils/useTheme';
+import { useTheme } from '../utils/useTheme';
 import styled from 'styled-components';
 import { FaMoon } from 'react-icons/fa';
 
@@ -10,6 +10,9 @@ const StyledButton = styled.button`
   cursor: pointer;
   :focus {
     outline: 6px double var(--red);
+  }
+  :hover {
+    color: var(--red);
   }
 `;
 

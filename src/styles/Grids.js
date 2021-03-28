@@ -7,7 +7,7 @@ const SiteLayout = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    'nav'
+    'header'
     'main'
     'footer';
 `;

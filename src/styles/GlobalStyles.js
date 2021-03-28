@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
       'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
       'Helvetica Neue', sans-serif;
   }
-  
+
   *,
   *::after,
   *::before {
@@ -49,91 +49,59 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--black);
     font-family: var(--body-font);
     overflow-y: scroll;
-    nav {
-      a:hover,
-      .active {
-        background: var(--black);
-        color: var(--white);
-        padding: 0 1rem;
-        margin: 0 -1rem;
+    h1,
+    header {
+      font-family: var(--header-font);
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    ul,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav,
+    footer {
+      ul {
+        list-style: none;
+        padding: 0;
       }
     }
-    footer {
-      a:hover {
-        background: var(--white);
-        color: var(--black);
-        padding: 0 0.5rem;
-        margin: 0 -0.5rem;
-      }
+
+    a {
+      transition: all 100ms ease-in-out;
+    }
+
+    a:hover {
+      color: var(--red);
+    }
+
+    a,
+    a:visited {
+      color: inherit;
+    }
+
+    a:focus {
+      outline: 6px double var(--red);
     }
   }
 
   body.dark {
     background: var(--black);
     color: var(--white);
-    nav {
-      a:hover,
-      .active {
-        background: var(--white);
-        color: var(--black);
-        padding: 0 1rem;
-        margin: 0 -1rem;
-      }
-    }
   }
 
   @media (prefers-color-scheme: dark) {
     background: var(--black);
     color: var(--white);
-    nav {
-      a:hover,
-      .active {
-        background: var(--white);
-        color: var(--black);
-        padding: 0 1rem;
-        margin: 0 -1rem;
-      }
-    }
-  }
-
-  h1,
-  header {
-    font-family: var(--header-font);
-    text-transform: uppercase;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  ol,
-  ul,
-  p {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav,
-  footer {
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-  }
-
-  a {
-    transition: all 100ms ease-in-out;
-  }
-
-  a,
-  a:visited {
-    color: inherit;
-  }
-
-  a:focus {
-    outline: 6px double var(--red);
   }
 `;
 
