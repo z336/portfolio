@@ -56,9 +56,6 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--white);
         padding: 0 1rem;
         margin: 0 -1rem;
-        :focus {
-          outline: 6px double var(--black);
-        }
       }
     }
     footer {
@@ -81,9 +78,6 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--black);
         padding: 0 1rem;
         margin: 0 -1rem;
-        :focus {
-          outline: 6px double var(--white);
-        }
       }
     }
   }
@@ -98,9 +92,6 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--black);
         padding: 0 1rem;
         margin: 0 -1rem;
-        :focus {
-          outline: 6px double var(--white);
-        }
       }
     }
   }
@@ -143,7 +134,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a:focus,
   button:focus {
-    outline: 6px double currentColor;
+    outline: 6px double var(--red);
     z-index: 999;
   }
 `;
