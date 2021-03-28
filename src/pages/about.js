@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+import SEO from '../components/SEO';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
@@ -16,6 +17,7 @@ const StyledSection = styled(Section)`
 export default function About() {
   return (
     <>
+      <SEO title="About" />
       <Article>
         <Heading>
           <h1>About</h1>

@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
 import styled from 'styled-components';
+import SEO from '../components/SEO';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
@@ -32,6 +33,7 @@ const StyledSection = styled(Section)`
 export default function IndexPage() {
   return (
     <>
+      <SEO title="Jon Coleman" />
       <Article>
         <Heading>
           <h1>Jon Coleman</h1>

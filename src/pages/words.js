@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
+import SEO from '../components/SEO';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
@@ -31,6 +32,7 @@ export default function BlogIndex({ data }) {
 
   return (
     <>
+      <SEO title="Words" />
       <Article>
         <Heading>
           <h1>Words</h1>
