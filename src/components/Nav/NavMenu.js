@@ -81,7 +81,7 @@ export default function NavMenu() {
     <StyledNavMenu ref={ref}>
       {open ? (
         <NavContainer>
-          <NavLinks open={open} setOpen={setOpen} />
+          <NavLinks open setOpen />
           <FooterLinks />
         </NavContainer>
       ) : (

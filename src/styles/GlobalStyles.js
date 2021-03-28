@@ -49,10 +49,6 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--black);
     font-family: var(--body-font);
     overflow-y: scroll;
-    button:hover {
-      background: var(--black);
-      color: var(--white);
-    }
     nav {
       a:hover,
       .active {
@@ -60,9 +56,8 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--white);
         padding: 0 1rem;
         margin: 0 -1rem;
-        a:focus {
-          outline: 6px double var(--white);
-          z-index: 999;
+        :focus {
+          outline: 6px double var(--black);
         }
       }
     }
@@ -79,10 +74,6 @@ export const GlobalStyles = createGlobalStyle`
   body.dark {
     background: var(--black);
     color: var(--white);
-    button:hover {
-      background: var(--white);
-      color: var(--black);
-    }
     nav {
       a:hover,
       .active {
@@ -90,6 +81,9 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--black);
         padding: 0 1rem;
         margin: 0 -1rem;
+        :focus {
+          outline: 6px double var(--white);
+        }
       }
     }
   }
@@ -97,10 +91,6 @@ export const GlobalStyles = createGlobalStyle`
   @media (prefers-color-scheme: dark) {
     background: var(--black);
     color: var(--white);
-    button:hover {
-      background: var(--white);
-      color: var(--black);
-    }
     nav {
       a:hover,
       .active {
@@ -108,6 +98,9 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--black);
         padding: 0 1rem;
         margin: 0 -1rem;
+        :focus {
+          outline: 6px double var(--white);
+        }
       }
     }
   }
@@ -137,6 +130,10 @@ export const GlobalStyles = createGlobalStyle`
       list-style: none;
       padding: 0;
     }
+  }
+
+  a {
+    transition: all 100ms ease-in-out;
   }
 
   a,

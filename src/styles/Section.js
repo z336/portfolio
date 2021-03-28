@@ -5,7 +5,7 @@ const Section = styled.section`
   margin: 0 auto;
   padding: 3rem 1rem;
   a:hover {
-    opacity: 0.3;
+    color: var(--red);
   }
 `;
 

@@ -19,6 +19,9 @@ const StyledSection = styled(Section)`
     }
     a {
       text-decoration: none;
+      :hover {
+        background: transparent;
+      }
     }
   }
 `;
