@@ -67,6 +67,9 @@ const NavToggle = styled.button`
     display: flex;
     margin-left: 2rem;
   }
+  :focus {
+    outline: 6px double var(--red);
+  }
 `;
 
 export default function NavMenu() {
@@ -81,7 +84,7 @@ export default function NavMenu() {
     <StyledNavMenu ref={ref}>
       {open ? (
         <NavContainer>
-          <NavLinks open setOpen />
+          <NavLinks />
           <FooterLinks />
         </NavContainer>
       ) : (

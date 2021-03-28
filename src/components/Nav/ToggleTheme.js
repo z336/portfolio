@@ -8,6 +8,9 @@ const StyledButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  :focus {
+    outline: 6px double var(--red);
+  }
 `;
 
 export default function ToggleTheme() {

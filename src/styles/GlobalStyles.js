@@ -132,10 +132,8 @@ export const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
 
-  a:focus,
-  button:focus {
+  a:focus {
     outline: 6px double var(--red);
-    z-index: 999;
   }
 `;
 
