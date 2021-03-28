@@ -10,6 +10,16 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 2rem 1rem 0.5rem 1rem;
   font-size: 1.5rem;
+  position: sticky;
+
+  .logo {
+    :focus {
+      outline: 6px double var(--red);
+    }
+    :hover {
+      color: var(--red);
+    }
+  }
 
   @media screen and (max-width: 834px) {
     .logo {
