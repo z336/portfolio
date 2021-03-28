@@ -8,15 +8,13 @@ const StyledFooter = styled.footer`
   background: var(--black);
   color: var(--white);
   font-size: 1.25rem;
+
   ul {
     display: flex;
   }
 
   a {
     text-decoration: none;
-    :hover {
-      color: var(--red);
-    }
   }
 
   @media screen and (max-width: 834px) {
@@ -26,6 +24,7 @@ const StyledFooter = styled.footer`
       padding-bottom: 3rem;
     }
     li {
+      padding: 0.75rem 1rem;
       :last-child {
         margin-top: 2rem;
       }

@@ -49,10 +49,45 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--black);
     font-family: var(--body-font);
     overflow-y: scroll;
+
+    nav {
+      a:hover,
+      .active {
+        background: var(--black);
+        color: var(--white);
+        padding: 0 1rem;
+        margin: 0 -1rem;
+      }
+      @media screen and (max-width: 834px) {
+        a:hover,
+        .active {
+          padding: 0 0.125rem;
+          margin: 0 -0.125rem;
+        }
+      }
+    }
+
+    footer {
+      a:hover {
+        background: var(--white);
+        color: var(--black);
+        padding: 0 0.5rem;
+        margin: 0 -0.5rem;
+      }
+    }
+
     h1,
     header {
       font-family: var(--header-font);
       text-transform: uppercase;
+    }
+
+    nav,
+    footer {
+      ul {
+        list-style: none;
+        padding: 0;
+      }
     }
 
     h1,
@@ -68,20 +103,8 @@ export const GlobalStyles = createGlobalStyle`
       padding: 0;
     }
 
-    nav,
-    footer {
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-    }
-
     a {
       transition: all 100ms ease-in-out;
-    }
-
-    a:hover {
-      color: var(--red);
     }
 
     a,
@@ -97,11 +120,22 @@ export const GlobalStyles = createGlobalStyle`
   body.dark {
     background: var(--black);
     color: var(--white);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background: var(--black);
-    color: var(--white);
+    nav {
+      a:hover,
+      .active {
+        background: var(--white);
+        color: var(--black);
+        padding: 0 1rem;
+        margin: 0 -1rem;
+      }
+      @media screen and (max-width: 834px) {
+        a:hover,
+        .active {
+          padding: 0 0.125rem;
+          margin: 0 -0.125rem;
+        }
+      }
+    }
   }
 `;
 

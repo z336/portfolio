@@ -12,13 +12,6 @@ const StyledNav = styled.nav`
 
   a {
     text-decoration: none;
-    :hover {
-      color: var(--red);
-    }
-  }
-
-  .active {
-    color: var(--red);
   }
 
   @media screen and (max-width: 1000px) {
