@@ -4,7 +4,6 @@ import { MDXProvider } from '@mdx-js/react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import styled from 'styled-components';
 import { FaArrowCircleLeft } from 'react-icons/fa';
-import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
 
@@ -44,21 +43,19 @@ export default function PostTemplate({ data: { mdx } }) {
 
   return (
     <>
-      <Article>
-        <MDXProvider components={shortcodes}>
-          <Heading>
-            <h1>{title}</h1>
-          </Heading>
-          <StyledSection>
-            <MDXRenderer>{body}</MDXRenderer>
-            <p className="arrows">
-              <Link to={`/${category}`}>
-                <FaArrowCircleLeft />
-              </Link>
-            </p>
-          </StyledSection>
-        </MDXProvider>
-      </Article>
+      <MDXProvider components={shortcodes}>
+        <Heading>
+          <h1>{title}</h1>
+        </Heading>
+        <StyledSection>
+          <MDXRenderer>{body}</MDXRenderer>
+          <p className="arrows">
+            <Link to={`/${category}`}>
+              <FaArrowCircleLeft />
+            </Link>
+          </p>
+        </StyledSection>
+      </MDXProvider>
     </>
   );
 }
