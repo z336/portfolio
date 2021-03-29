@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --black: #202020;
     --white: #fffffc;
-    --red: #ff0000;
+    --red: #cc0000;
     --header-font: 'PoppinsBold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
       sans-serif;

@@ -26,6 +26,10 @@ const StyledSection = styled(Section)`
     padding-left: 2em;
   }
 
+  a {
+    color: var(--red);
+  }
+
   .arrows {
     font-size: 2rem;
   }
