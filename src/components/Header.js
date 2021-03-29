@@ -12,15 +12,6 @@ const StyledHeader = styled.header`
   font-size: 1.5rem;
   position: sticky;
 
-  .logo {
-    :focus {
-      outline: 6px double var(--red);
-    }
-    :hover {
-      color: var(--red);
-    }
-  }
-
   @media screen and (max-width: 834px) {
     .logo {
       margin-right: 1rem;
@@ -31,7 +22,7 @@ const StyledHeader = styled.header`
 export default function Header() {
   return (
     <StyledHeader>
-      <Link to="/" className="logo">
+      <Link to="/">
         <FaPeace />
       </Link>
       <Nav />

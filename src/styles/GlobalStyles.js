@@ -58,6 +58,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0 1rem;
         margin: 0 -1rem;
       }
+
       @media screen and (max-width: 834px) {
         a:hover,
         .active {
@@ -135,7 +136,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a:focus {
-    outline: 6px double var(--red);
+    outline: 6px double currentColor;
   }
 `;
 

@@ -9,10 +9,7 @@ const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   :focus {
-    outline: 6px double var(--red);
-  }
-  :hover {
-    color: var(--red);
+    outline: 6px double currentColor;
   }
 `;
 
