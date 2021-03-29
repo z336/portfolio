@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
+import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 import Section from '../styles/Section';
 
@@ -31,22 +32,24 @@ export default function BlogIndex({ data }) {
   return (
     <>
       <SEO title="Words" />
-      <Heading>
-        <h1>Words</h1>
-      </Heading>
-      <StyledSection>
-        <ul>
-          {posts.map(({ node: post }) => (
-            <li key={post.id}>
-              <Link to={post.fields.slug}>
-                <h2>{post.frontmatter.title}</h2>
-                <p>{post.excerpt}</p>
-              </Link>
-              <hr />
-            </li>
-          ))}
-        </ul>
-      </StyledSection>
+      <Article>
+        <Heading>
+          <h1>Words</h1>
+        </Heading>
+        <StyledSection>
+          <ul>
+            {posts.map(({ node: post }) => (
+              <li key={post.id}>
+                <Link to={post.fields.slug}>
+                  <h2>{post.frontmatter.title}</h2>
+                  <p>{post.excerpt}</p>
+                </Link>
+                <hr />
+              </li>
+            ))}
+          </ul>
+        </StyledSection>
+      </Article>
     </>
   );
 }
