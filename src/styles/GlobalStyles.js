@@ -143,6 +143,13 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
   }
 
+  hr {
+    padding: 0;
+    border: none;
+    border-top: medium double currentColor;
+    color: currentColor;
+    text-align: center;
+  }
 `;
 
 export default GlobalStyles;

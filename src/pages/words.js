@@ -11,15 +11,14 @@ const StyledSection = styled(Section)`
     max-width: 55ch;
     list-style: none;
     margin: 0 auto;
-    @media (min-width: 834px) {
-      padding-left: 1rem;
-      border-left: 3px solid;
-    }
   }
   li {
     margin-bottom: 3rem;
     :last-child {
       margin-bottom: 0;
+      hr {
+        display: none;
+      }
     }
   }
   a {
@@ -45,6 +44,7 @@ export default function BlogIndex({ data }) {
                   <h2>{post.frontmatter.title}</h2>
                   <p>{post.excerpt}</p>
                 </Link>
+                <hr />
               </li>
             ))}
           </ul>
