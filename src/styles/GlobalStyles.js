@@ -135,9 +135,14 @@ export const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
 
-  a:focus {
-    outline: 6px double currentColor;
+  a:focus, button:focus {
+    outline: 6px double var(--red);
   }
+
+  a:focus:not(:focus-visible), button:focus:not(:focus-visible) {
+    outline: none;
+  }
+
 `;
 
 export default GlobalStyles;

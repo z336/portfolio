@@ -10,7 +10,6 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 2rem 1rem 0.5rem 1rem;
   font-size: 1.5rem;
-  position: sticky;
 
   @media screen and (max-width: 834px) {
     .logo {
