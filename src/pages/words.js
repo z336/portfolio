@@ -3,10 +3,9 @@ import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Article from '../styles/Article';
-import Heading from '../styles/Heading';
-import Section from '../styles/Section';
+import Header from '../styles/Header';
 
-const StyledSection = styled(Section)`
+const StyledArticle = styled(Article)`
   ul {
     max-width: 55ch;
     list-style: none;
@@ -32,24 +31,22 @@ export default function BlogIndex({ data }) {
   return (
     <>
       <SEO title="Words" />
-      <Article>
-        <Heading>
-          <h1>Words</h1>
-        </Heading>
-        <StyledSection>
-          <ul>
-            {posts.map(({ node: post }) => (
-              <li key={post.id}>
-                <Link to={post.fields.slug}>
-                  <h2>{post.frontmatter.title}</h2>
-                  <p>{post.excerpt}</p>
-                </Link>
-                <hr />
-              </li>
-            ))}
-          </ul>
-        </StyledSection>
-      </Article>
+      <Header>
+        <h1>Words</h1>
+      </Header>
+      <StyledArticle>
+        <ul>
+          {posts.map(({ node: post }) => (
+            <li key={post.id}>
+              <Link to={post.fields.slug}>
+                <h2>{post.frontmatter.title}</h2>
+                <p>{post.excerpt}</p>
+              </Link>
+              <hr />
+            </li>
+          ))}
+        </ul>
+      </StyledArticle>
     </>
   );
 }

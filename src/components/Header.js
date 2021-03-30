@@ -10,11 +10,8 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 2rem 1rem 0.5rem 1rem;
   font-size: 1.5rem;
-
-  @media screen and (max-width: 834px) {
-    .logo {
-      margin-right: 1rem;
-    }
+  a {
+    text-decoration: none;
   }
 `;
 

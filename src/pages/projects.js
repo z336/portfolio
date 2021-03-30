@@ -4,10 +4,9 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Article from '../styles/Article';
-import Heading from '../styles/Heading';
-import Section from '../styles/Section';
+import Header from '../styles/Header';
 
-const StyledSection = styled(Section)`
+const StyledArticle = styled(Article)`
   ul {
     list-style: none;
     display: grid;
@@ -41,29 +40,27 @@ export default function ProjectIndex({ data }) {
   return (
     <>
       <SEO title="Projects" />
-      <Article>
-        <Heading>
-          <h1>Projects</h1>
-        </Heading>
-        <StyledSection>
-          <ul>
-            {posts.map(({ node: post }) => (
-              <li key={post.id}>
-                <Link to={post.fields.slug}>
-                  <GatsbyImage
-                    image={post.frontmatter.img.childImageSharp.gatsbyImageData}
-                    alt="A project screenshot"
-                    className="image"
-                  ></GatsbyImage>
-                  <h3>{post.frontmatter.title}</h3>
-                  <p>{post.frontmatter.description}</p>
-                  <Button>Read More</Button>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </StyledSection>
-      </Article>
+      <Header>
+        <h1>Projects</h1>
+      </Header>
+      <StyledArticle>
+        <ul>
+          {posts.map(({ node: post }) => (
+            <li key={post.id}>
+              <Link to={post.fields.slug}>
+                <GatsbyImage
+                  image={post.frontmatter.img.childImageSharp.gatsbyImageData}
+                  alt="A project screenshot"
+                  className="image"
+                ></GatsbyImage>
+                <h3>{post.frontmatter.title}</h3>
+                <p>{post.frontmatter.description}</p>
+                <Button>Read More</Button>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </StyledArticle>
     </>
   );
 }
