@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  max-width: 125ch;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 3rem 0;
 
   p,
   li {
@@ -18,8 +18,7 @@ const Section = styled.section`
   }
 
   img {
-    border: 3px solid currentColor;
-    border-radius: 2px;
+    border-radius: 3px;
   }
 
   a:hover {

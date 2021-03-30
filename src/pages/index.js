@@ -3,19 +3,21 @@ import * as React from 'react';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Article from '../styles/Article';
-import Heading from '../styles/Heading';
+// import Heading from '../styles/Heading';
 import Section from '../styles/Section';
 
 const StyledSection = styled(Section)`
-  max-width: 75ch;
+  /* max-width: 75ch; */
   div {
     padding: 2rem;
     border: 0.5rem solid;
     h2 {
-      font-family: var(--header-font);
-      text-transform: uppercase;
-      text-align: center;
+      /* font-family: var(--header-font);
+      text-transform: uppercase; */
       margin-bottom: 1rem;
+    }
+    p {
+      max-width: 55ch;
     }
     ul {
       display: flex;
@@ -35,11 +37,12 @@ export default function IndexPage() {
     <>
       <SEO title="Jon Coleman" />
       <Article>
-        <Heading>
+        {/* <Heading>
           <h1>Jon Coleman</h1>
-        </Heading>
+        </Heading> */}
         <StyledSection>
           <div>
+            <h1>Jon Coleman</h1>
             <h2>Front-End Designer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

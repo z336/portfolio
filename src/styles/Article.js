@@ -12,11 +12,6 @@ const Article = styled.article`
   img {
     margin: 0 0 2rem;
   }
-
-  img {
-    border: 3px solid currentColor;
-    border-radius: 2px;
-  }
 `;
 
 export default Article;
