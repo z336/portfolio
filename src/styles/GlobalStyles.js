@@ -126,6 +126,18 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
   a {
     transition: all 100ms ease-in-out;
   }

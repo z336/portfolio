@@ -31,6 +31,7 @@ const StyledArticle = styled(Article)`
 
   .arrows {
     font-size: 2rem;
+    color: currentColor;
   }
 `;
 
@@ -50,7 +51,7 @@ export default function PostTemplate({ data: { mdx } }) {
         <StyledArticle>
           <MDXRenderer>{body}</MDXRenderer>
           <p className="arrows">
-            <Link to={`/${category}`}>
+            <Link to={`/${category}`} className="arrows">
               <FaArrowCircleLeft />
             </Link>
           </p>

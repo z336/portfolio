@@ -5,9 +5,6 @@ const Header = styled.div`
   color: var(--white);
   padding: 1.5rem 1rem 1rem 1rem;
   border-bottom: 2px solid currentColor;
-  h1 {
-    font-size: 3rem;
-  }
 `;
 
 export default Header;
