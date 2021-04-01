@@ -52,11 +52,10 @@ export default function ProjectIndex({ data }) {
                   image={post.frontmatter.img.childImageSharp.gatsbyImageData}
                   alt="A project screenshot"
                   className="image"
-                  tabIndex="-1"
                 ></GatsbyImage>
                 <h3>{post.frontmatter.title}</h3>
                 <p>{post.frontmatter.description}</p>
-                <Button tabIndex="-1">Read More</Button>
+                <Button>Read More</Button>
               </Link>
             </li>
           ))}
