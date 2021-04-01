@@ -21,7 +21,11 @@ export default function ToggleTheme() {
   if (!mount) return null;
 
   return (
-    <StyledButton onClick={toggleTheme} className={theme}>
+    <StyledButton
+      onClick={toggleTheme}
+      className={theme}
+      aria-label="Toggle Theme"
+    >
       <FaMoon />
     </StyledButton>
   );

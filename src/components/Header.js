@@ -18,7 +18,7 @@ const StyledHeader = styled.header`
 export default function Header() {
   return (
     <StyledHeader>
-      <Link to="/">
+      <Link to="/" aria-label="Home">
         <FaPeace />
       </Link>
       <Nav />
