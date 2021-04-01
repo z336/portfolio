@@ -39,7 +39,8 @@ export default function IndexPage() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus nemo non corrupti doloremque ratione neque? Illum
             beatae itaque aliquam nulla molestiae! Nobis ex quos a perferendis
-            sequi quas, sapiente aliquid!
+            sequi quas, sapiente aliquid! I'm testing something out with this
+            extra text pay no mind.
           </p>
           <ul>
             <li>
