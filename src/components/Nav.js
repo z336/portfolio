@@ -6,6 +6,7 @@ import ToggleTheme from './ToggleTheme';
 const StyledNav = styled.nav`
   padding-right: 0;
   margin-left: auto;
+
   ul {
     display: flex;
   }
@@ -25,16 +26,22 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 834px) {
     font-size: 1rem;
     li {
-      padding-right: 0.5rem;
+      padding: 0 0.25rem;
       :first-child {
         display: none;
+      }
+      :last-child {
+        padding: 0;
       }
     }
   }
 
   @media screen and (min-width: 834px) {
     li {
-      padding-right: 3rem;
+      padding: 0 1.5rem;
+      :last-child {
+        padding: 0;
+      }
     }
   }
 `;

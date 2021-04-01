@@ -1,9 +1,3 @@
-// import { createGlobalStyle } from 'styled-components';
-
-// import headerFont from '../assets/fonts/Poppins-Bold.ttf';
-// import bodyFont from '../assets/fonts/AlteHaasGroteskRegular.ttf';
-
-// export const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: 'PoppinsBold';
   src: url('../assets/fonts/Poppins-Bold.ttf');
@@ -56,8 +50,8 @@ body {
     .active {
       background: var(--black);
       color: var(--white);
-      padding: 0 1rem;
-      margin: 0 -1rem;
+      padding: 0 0.5rem;
+      margin: 0 -0.5rem;
     }
 
     @media screen and (max-width: 834px) {
@@ -87,8 +81,8 @@ body.dark {
     .active {
       background: var(--white);
       color: var(--black);
-      padding: 0 1rem;
-      margin: 0 -1rem;
+      padding: 0 0.5rem;
+      margin: 0 -0.5rem;
     }
     @media screen and (max-width: 834px) {
       a:hover,
@@ -165,6 +159,3 @@ hr {
   color: currentColor;
   text-align: center;
 }
-// `;
-
-// export default GlobalStyles;
