@@ -7,11 +7,13 @@ export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'PoppinsBold';
     src: url(${headerFont});
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'AlteHaasGroteskRegular';
     src: url(${bodyFont});
+    font-display: swap;
   }
 
   :root {
