@@ -8,10 +8,10 @@ export default function NotFoundPage() {
   return (
     <>
       <SEO title="404" />
-      <Header>
-        <h1>Oh no...</h1>
-      </Header>
       <Article>
+        <Header>
+          <h1>Oh no...</h1>
+        </Header>
         <p>
           That page just ain't here. Head <Link to="/">home</Link>?
         </p>
