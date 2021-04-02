@@ -38,7 +38,7 @@ const StyledHeader = styled(Header)`
 export default function IndexPage() {
   return (
     <>
-      <SEO title="Jon Coleman" />
+      <SEO title="Jon Coleman's personal portfolio and blog" />
       <StyledArticle>
         <div className="cta">
           <StyledHeader>
