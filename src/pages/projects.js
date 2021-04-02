@@ -11,17 +11,11 @@ const StyledArticle = styled(Article)`
     list-style: none;
     display: grid;
     gap: 2rem;
-    p {
-      margin-bottom: 1rem;
-    }
     @media (min-width: 834px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     a {
       text-decoration: none;
-      :hover {
-        background: transparent;
-      }
     }
   }
 `;
@@ -43,7 +37,6 @@ export default function ProjectIndex({ data }) {
                 <GatsbyImage
                   image={post.frontmatter.img.childImageSharp.gatsbyImageData}
                   alt="A project screenshot"
-                  className="image"
                 ></GatsbyImage>
                 <h3>{post.frontmatter.title}</h3>
               </Link>

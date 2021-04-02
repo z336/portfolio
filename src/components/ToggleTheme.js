@@ -8,6 +8,9 @@ const StyledButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  :hover {
+    transform: rotate(-20deg);
+  }
 `;
 
 export default function ToggleTheme() {

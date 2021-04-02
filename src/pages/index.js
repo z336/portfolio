@@ -11,12 +11,13 @@ const StyledArticle = styled(Article)`
   }
 
   .info {
-    padding: 1.5rem 0 1rem 2rem;
+    padding: 1.5rem 0 1.5rem 2rem;
     h2 {
       margin-bottom: 1rem;
     }
     p {
       max-width: 55ch;
+      margin-bottom: 1.5rem;
     }
     ul {
       display: flex;
@@ -25,7 +26,7 @@ const StyledArticle = styled(Article)`
         flex-direction: column;
       }
       li {
-        padding-right: 1rem;
+        padding-right: 1.5rem;
       }
     }
   }
@@ -33,6 +34,10 @@ const StyledArticle = styled(Article)`
 
 const StyledHeader = styled(Header)`
   padding-left: 2rem;
+`;
+
+const StyledLink = styled(Link)`
+  font-size: 1.25rem;
 `;
 
 export default function IndexPage() {
@@ -49,16 +54,14 @@ export default function IndexPage() {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus nemo non corrupti doloremque ratione neque? Illum
-              beatae itaque aliquam nulla molestiae! Nobis ex quos a perferendis
-              sequi quas, sapiente aliquid! I'm testing something out with this
-              extra text pay no mind.
+              beatae itaque aliquam nulla molestiae!
             </p>
             <ul>
               <li>
-                <Link to="/about">About</Link>
+                <StyledLink to="/about">About</StyledLink>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <StyledLink to="/projects">Projects</StyledLink>
               </li>
             </ul>
           </div>

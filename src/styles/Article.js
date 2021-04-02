@@ -6,15 +6,14 @@ const Article = styled.article`
   padding: 3rem 1rem;
 
   p,
-  li {
-    line-height: 1.8rem;
+  ul,
+  ol {
+    margin-bottom: 1rem;
   }
 
   p,
-  ol,
-  ul,
-  img {
-    margin: 0 0 2rem;
+  li {
+    line-height: 1.8rem;
   }
 
   h1,

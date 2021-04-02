@@ -11,6 +11,10 @@ const StyledArticle = styled(Article)`
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+
+  .image {
+    border: 0.5rem solid currentColor;
+  }
 `;
 
 export default function About() {
