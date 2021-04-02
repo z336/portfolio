@@ -42,6 +42,10 @@ const StyledNav = styled.nav`
       :last-child {
         padding: 0;
       }
+      :first-child {
+        padding-left: 0;
+        margin-right: auto;
+      }
     }
   }
 `;

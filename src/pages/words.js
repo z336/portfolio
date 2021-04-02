@@ -40,8 +40,8 @@ export default function BlogIndex({ data }) {
             <li key={post.id}>
               <Link to={post.fields.slug}>
                 <h2>{post.frontmatter.title}</h2>
-                <p>{post.excerpt}</p>
               </Link>
+              <p>{post.excerpt}</p>
               <hr />
             </li>
           ))}

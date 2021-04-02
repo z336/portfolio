@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { FaPeace } from 'react-icons/fa';
 import Nav from './Nav';
 
 const StyledHeader = styled.header`
@@ -18,8 +17,8 @@ const StyledHeader = styled.header`
 export default function Header() {
   return (
     <StyledHeader>
-      <Link to="/" aria-label="Home">
-        <FaPeace />
+      <Link to="/" aria-label="Home" activeStyle={{ display: 'none' }}>
+        Jon Coleman
       </Link>
       <Nav />
     </StyledHeader>

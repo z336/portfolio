@@ -26,14 +26,6 @@ const StyledArticle = styled(Article)`
   }
 `;
 
-const Button = styled.button`
-  background-color: inherit;
-  color: inherit;
-  padding: 0.25rem 1rem;
-  border: 3px solid;
-  cursor: pointer;
-`;
-
 export default function ProjectIndex({ data }) {
   const { edges: posts } = data.allMdx;
 
@@ -54,9 +46,8 @@ export default function ProjectIndex({ data }) {
                   className="image"
                 ></GatsbyImage>
                 <h3>{post.frontmatter.title}</h3>
-                <p>{post.frontmatter.description}</p>
-                <Button>Read More</Button>
               </Link>
+              <p>{post.frontmatter.description}</p>
             </li>
           ))}
         </ul>

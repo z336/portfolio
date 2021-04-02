@@ -17,6 +17,15 @@ const Article = styled.article`
     margin: 0 0 2rem;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
+  }
+
   img {
     border-radius: 3px;
   }
