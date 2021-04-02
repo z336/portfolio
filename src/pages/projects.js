@@ -71,7 +71,7 @@ export const pageQuery = graphql`
             category
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.78)
+                gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.5)
               }
             }
           }
