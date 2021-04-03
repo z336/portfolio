@@ -8,8 +8,9 @@ const StyledButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  :hover {
-    transform: rotate(-20deg);
+
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
   }
 `;
 

@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import ToggleTheme from './ToggleTheme';
 
 const StyledNav = styled.nav`
-  padding-right: 0;
   margin-left: auto;
 
   ul {
     display: flex;
+    }
   }
 
   a {
@@ -16,33 +15,39 @@ const StyledNav = styled.nav`
   }
 
   @media screen and (max-width: 1200px) {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    color: var(--white);
+    border-top: 1px solid var(--white);
+    padding: 0.5rem;
+    z-index: 1000;
+    ul {
+      justify-content: space-around;
+    }
+    .active {
+      background: var(--white);
+      color: var(--black);
+    }
+  }
+
+  @media screen and (max-width: 834px) {
+    font-size: 1.125rem;
     li {
-      :first-child,
-      :nth-child(2) {
+      padding: 0 0.25rem;
+      :first-child {
         display: none;
       }
     }
   }
 
-  @media screen and (max-width: 834px) {
-    li {
-      padding: 0 0.25rem;
-      :last-child {
-        padding: 0;
-      }
-    }
-  }
-
-  @media screen and (min-width: 834px) {
+  @media screen and (min-width: 1200px) {
     li {
       padding: 0 1.5rem;
-      :last-child {
-        padding: 0;
-      }
-      :first-child {
-        padding-left: 0;
-        margin-right: auto;
-      }
     }
   }
 `;
@@ -70,9 +75,6 @@ export default function Nav() {
           <Link to="/words" activeClassName="active">
             Words
           </Link>
-        </li>
-        <li>
-          <ToggleTheme />
         </li>
       </ul>
     </StyledNav>

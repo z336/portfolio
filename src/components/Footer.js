@@ -18,18 +18,11 @@ const StyledFooter = styled.footer`
     padding: 0.5rem 1rem 2rem 1rem;
   }
 
-  @media screen and (max-width: 834px) {
-    ul {
-      li {
-        padding: 0.75rem 0;
-        :last-child {
-          padding-top: 2rem;
-        }
-      }
-    }
+  @media screen and (max-width: 1200px) {
+    display: none;
   }
 
-  @media screen and (min-width: 834px) {
+  @media screen and (min-width: 1200px) {
     ul {
       display: flex;
       li {
