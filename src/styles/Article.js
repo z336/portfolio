@@ -25,8 +25,20 @@ const Article = styled.article`
     margin-bottom: 1rem;
   }
 
+  a:hover {
+    background: var(--black);
+    color: var(--white);
+    padding: 0 0.5rem;
+    margin: 0 -0.5rem;
+  }
+
+  .arrows > a:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+
   .large-image {
-    border: 0.5rem solid currentColor;
+    border: 0.5rem solid;
   }
 
   @media screen and (max-width: 834px) {

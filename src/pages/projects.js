@@ -53,12 +53,10 @@ export default function ProjectIndex({ data }) {
         <h1>Projects</h1>
       </Header>
       <StyledArticle>
-        <div className="leading-text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            numquam nisi veniam suscipit eligendi illo perspiciatis.
-          </p>
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam
+          nisi veniam suscipit eligendi illo perspiciatis.
+        </p>
         <ul>
           {posts.map(({ node: post }) => (
             <li key={post.id}>

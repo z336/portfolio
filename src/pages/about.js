@@ -27,7 +27,7 @@ export default function About() {
           className="large-image"
           placeholder="blurred"
         />
-        <div className="text">
+        <div>
           <p>
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts. Separated they

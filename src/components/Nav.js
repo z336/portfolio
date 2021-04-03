@@ -13,6 +13,14 @@ const StyledNav = styled.nav`
     text-decoration: none;
   }
 
+  a:hover,
+  .active {
+    background: var(--black);
+    color: var(--white);
+    padding: 0 0.5rem;
+    margin: 0 -0.5rem;
+  }
+
   @media screen and (max-width: 1200px) {
     position: fixed;
     overflow: hidden;
@@ -22,12 +30,13 @@ const StyledNav = styled.nav`
     right: 0;
     background-color: var(--black);
     color: var(--white);
-    border-top: 0.5px solid var(--white);
     padding: 0.75rem 0.25rem;
     z-index: 1000;
     ul {
       justify-content: space-around;
     }
+
+    a:hover,
     .active {
       background: var(--white);
       color: var(--black);
@@ -38,6 +47,11 @@ const StyledNav = styled.nav`
     font-size: 1.125rem;
     li {
       padding: 0 0.25rem;
+    }
+    a:hover,
+    .active {
+      padding: 0 0.125rem;
+      margin: 0 -0.125rem;
     }
   }
 

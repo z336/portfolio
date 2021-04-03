@@ -12,6 +12,13 @@ const StyledFooter = styled.footer`
     text-decoration: none;
   }
 
+  a:hover {
+    background: var(--white);
+    color: var(--black);
+    padding: 0 0.5rem;
+    margin: 0 -0.5rem;
+  }
+
   div {
     max-width: 63rem;
     margin: 0 auto;

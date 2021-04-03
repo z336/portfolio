@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Nav from './Nav';
-import ToggleTheme from './ToggleTheme';
 
 const StyledHeader = styled.header`
   grid-area: header;
@@ -33,7 +32,6 @@ export default function Header() {
         Jon Coleman
       </Link>
       <Nav />
-      <ToggleTheme className="header-links" />
     </StyledHeader>
   );
 }
