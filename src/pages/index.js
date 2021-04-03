@@ -17,7 +17,6 @@ const StyledArticle = styled(Article)`
     }
     p {
       max-width: 55ch;
-      font-size: 1.25rem;
       margin-bottom: 1.5rem;
     }
     ul {
