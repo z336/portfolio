@@ -12,7 +12,7 @@ const StyledArticle = styled(Article)`
     display: grid;
     gap: 2rem;
     @media (min-width: 834px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
     a {
       text-decoration: none;

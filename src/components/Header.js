@@ -13,16 +13,12 @@ const StyledHeader = styled.header`
   a {
     text-decoration: none;
   }
-
-  /* @media screen and (max-width: 834px) {
-    font-size: 1.125rem;
-  } */
 `;
 
 export default function Header() {
   return (
     <StyledHeader>
-      <Link to="/" aria-label="Home">
+      <Link to="/" aria-label="Home" activeStyle={{ display: 'none' }}>
         Jon Coleman
       </Link>
       <Nav />

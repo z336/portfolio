@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
   }
 
   div {
-    max-width: 1400px;
+    max-width: 63rem;
     margin: 0 auto;
     padding: 0.5rem 1rem 2rem 1rem;
   }

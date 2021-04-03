@@ -38,9 +38,6 @@ const StyledNav = styled.nav`
     font-size: 1.125rem;
     li {
       padding: 0 0.25rem;
-      :first-child {
-        display: none;
-      }
     }
   }
 
@@ -68,11 +65,6 @@ export default function Nav() {
         <li>
           <Link to="/projects" activeClassName="active">
             Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="/words" activeClassName="active">
-            Words
           </Link>
         </li>
       </ul>
