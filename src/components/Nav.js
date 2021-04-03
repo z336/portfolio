@@ -15,21 +15,18 @@ const StyledNav = styled.nav`
     text-decoration: none;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     li {
-      :first-child {
+      :first-child,
+      :nth-child(2) {
         display: none;
       }
     }
   }
 
   @media screen and (max-width: 834px) {
-    font-size: 1rem;
     li {
       padding: 0 0.25rem;
-      :first-child {
-        display: none;
-      }
       :last-child {
         padding: 0;
       }
