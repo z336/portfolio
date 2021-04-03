@@ -6,10 +6,6 @@ import Article from '../styles/Article';
 import Header from '../styles/Header';
 
 const StyledArticle = styled(Article)`
-  .image {
-    border: 0.5rem solid currentColor;
-  }
-
   @media (min-width: 834px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -28,7 +24,7 @@ export default function About() {
         <StaticImage
           src="../assets/images/jon.png"
           alt="code"
-          className="image"
+          className="large-image"
           placeholder="blurred"
         />
         <div className="text">

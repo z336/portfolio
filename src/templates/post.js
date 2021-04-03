@@ -58,7 +58,11 @@ export default function PostTemplate({ data: { mdx } }) {
           <h1>{title}</h1>
         </Header>
         <ImageArticle>
-          <GatsbyImage image={image} alt={alt}></GatsbyImage>
+          <GatsbyImage
+            image={image}
+            alt={alt}
+            className="large-image"
+          ></GatsbyImage>
         </ImageArticle>
         <StyledArticle>
           <MDXRenderer>{body}</MDXRenderer>

@@ -25,8 +25,8 @@ const Article = styled.article`
     margin-bottom: 1rem;
   }
 
-  img {
-    border-radius: 3px;
+  .large-image {
+    border: 0.5rem solid currentColor;
   }
 
   @media screen and (max-width: 834px) {

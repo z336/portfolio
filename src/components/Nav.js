@@ -22,8 +22,8 @@ const StyledNav = styled.nav`
     right: 0;
     background-color: var(--black);
     color: var(--white);
-    border-top: 1px solid var(--white);
-    padding: 0.5rem;
+    border-top: 0.5px solid var(--white);
+    padding: 0.75rem 0.25rem;
     z-index: 1000;
     ul {
       justify-content: space-around;

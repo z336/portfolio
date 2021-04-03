@@ -7,10 +7,6 @@ import Article from '../styles/Article';
 import Header from '../styles/Header';
 
 const StyledArticle = styled(Article)`
-  .leading-text {
-    margin-bottom: 3rem;
-  }
-
   p {
     max-width: 55ch;
   }
@@ -66,7 +62,7 @@ export default function ProjectIndex({ data }) {
         <ul>
           {posts.map(({ node: post }) => (
             <li key={post.id}>
-              <div className="image">
+              <div>
                 <GatsbyImage
                   image={post.frontmatter.img.childImageSharp.gatsbyImageData}
                   alt={post.frontmatter.alt}
