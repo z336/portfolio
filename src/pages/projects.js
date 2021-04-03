@@ -69,7 +69,7 @@ export default function ProjectIndex({ data }) {
               <div className="image">
                 <GatsbyImage
                   image={post.frontmatter.img.childImageSharp.gatsbyImageData}
-                  alt="A project screenshot"
+                  alt={post.frontmatter.alt}
                 ></GatsbyImage>
               </div>
               <div className="text">
@@ -101,13 +101,14 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            category
-            tags
             img {
               childImageSharp {
                 gatsbyImageData(placeholder: BLURRED)
               }
             }
+            alt
+            category
+            tags
           }
           fields {
             slug

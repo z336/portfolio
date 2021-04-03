@@ -11,9 +11,6 @@ import Header from '../styles/Header';
 const ImageArticle = styled(Article)`
   max-width: 100ch;
   margin: 0 auto;
-  img {
-    border: 0.5rem solid currentColor;
-  }
 `;
 
 const StyledArticle = styled(Article)`
@@ -49,6 +46,8 @@ const shortcodes = { Link };
 
 export default function PostTemplate({ data: { mdx } }) {
   const title = mdx.frontmatter.title;
+  const image = mdx.frontmatter.img.childImageSharp.gatsbyImageData;
+  const alt = mdx.frontmatter.alt;
   const body = mdx.body;
   const category = mdx.frontmatter.category;
 
@@ -59,10 +58,7 @@ export default function PostTemplate({ data: { mdx } }) {
           <h1>{title}</h1>
         </Header>
         <ImageArticle>
-          <GatsbyImage
-            image={mdx.frontmatter.img.childImageSharp.gatsbyImageData}
-            alt="A project screenshot"
-          ></GatsbyImage>
+          <GatsbyImage image={image} alt={alt}></GatsbyImage>
         </ImageArticle>
         <StyledArticle>
           <MDXRenderer>{body}</MDXRenderer>
@@ -85,14 +81,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        category
-        tags
         img {
           childImageSharp {
             id
             gatsbyImageData
           }
         }
+        alt
+        category
+        tags
       }
     }
   }
