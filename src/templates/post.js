@@ -36,8 +36,9 @@ const ContentArticle = styled(Article)`
     padding-left: 2em;
   }
 
-  a {
-    color: var(--blue);
+  a:hover {
+    padding: 0;
+    margin: 0;
   }
 
   p:last-child {

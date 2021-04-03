@@ -29,10 +29,6 @@ const Article = styled.article`
     border-radius: 3px;
   }
 
-  a:hover {
-    color: var(--blue);
-  }
-
   @media screen and (max-width: 834px) {
     .image {
       margin-bottom: 2rem;
