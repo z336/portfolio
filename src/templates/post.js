@@ -8,32 +8,26 @@ import { FaArrowCircleLeft } from 'react-icons/fa';
 import Article from '../styles/Article';
 import Header from '../styles/Header';
 
-const OverviewArticle = styled(Article)`
-  max-width: 55ch;
-  margin: 0 auto;
-  padding: 3rem 1rem 0 1rem;
-  p:last-child {
-    margin-bottom: 0;
-  }
-`;
-
 const ImageArticle = styled(Article)`
   max-width: 100ch;
   margin: 0 auto;
-  padding: 3rem 1rem;
   img {
     border: 0.5rem solid currentColor;
   }
 `;
 
-const ContentArticle = styled(Article)`
-  max-width: 55ch;
+const StyledArticle = styled(Article)`
   margin: 0 auto;
+  max-width: 55ch;
   padding: 0 1rem 3rem 1rem;
 
   ol,
   ul {
     padding-left: 2em;
+  }
+
+  img:first-child {
+    max-width: 100ch;
   }
 
   a:hover {
@@ -64,29 +58,20 @@ export default function PostTemplate({ data: { mdx } }) {
         <Header>
           <h1>{title}</h1>
         </Header>
-        <OverviewArticle>
-          <h2>Overview</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Exercitationem, magni, at architecto eligendi laborum harum
-            perferendis vero sapiente quis dolorem veniam tempore culpa,
-            cupiditate facere quidem repudiandae libero inventore? Dolorum?
-          </p>
-        </OverviewArticle>
         <ImageArticle>
           <GatsbyImage
             image={mdx.frontmatter.img.childImageSharp.gatsbyImageData}
             alt="A project screenshot"
           ></GatsbyImage>
         </ImageArticle>
-        <ContentArticle>
+        <StyledArticle>
           <MDXRenderer>{body}</MDXRenderer>
           <p className="arrows">
             <Link to={`/${category}`} className="arrows">
               <FaArrowCircleLeft />
             </Link>
           </p>
-        </ContentArticle>
+        </StyledArticle>
       </MDXProvider>
     </>
   );
@@ -99,6 +84,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        description
         category
         tags
         img {
