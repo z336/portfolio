@@ -10,7 +10,7 @@ const StyledArticle = styled(Article)`
     border: 0.5rem solid;
   }
 
-  .info {
+  .text {
     padding: 1.5rem 0 1.5rem 2rem;
     h2 {
       margin-bottom: 1rem;
@@ -26,7 +26,11 @@ const StyledArticle = styled(Article)`
         flex-direction: column;
       }
       li {
+        margin-bottom: 0.75rem;
         padding-right: 1.5rem;
+        :last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -49,7 +53,7 @@ export default function IndexPage() {
           <StyledHeader>
             <h1>Jon Coleman</h1>
           </StyledHeader>
-          <div className="info">
+          <div className="text">
             <h2>Front-End Designer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

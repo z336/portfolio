@@ -6,14 +6,14 @@ import Article from '../styles/Article';
 import Header from '../styles/Header';
 
 const StyledArticle = styled(Article)`
+  .image {
+    border: 0.5rem solid currentColor;
+  }
+
   @media (min-width: 834px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-  }
-
-  .image {
-    border: 0.5rem solid currentColor;
   }
 `;
 
@@ -39,6 +39,12 @@ export default function About() {
             language ocean. A small river named Duden flows by their place and
             supplies it with the necessary regelialia.
           </p>
+          <h2>Skills</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <h2>Contact</h2>
           <p>
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.

@@ -26,7 +26,7 @@ const StyledArticle = styled(Article)`
   }
 
   a {
-    color: var(--red);
+    color: var(--blue);
   }
 
   .arrows {
@@ -68,7 +68,6 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
-        date
         category
         tags
       }

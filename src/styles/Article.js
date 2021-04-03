@@ -8,7 +8,7 @@ const Article = styled.article`
   p,
   ul,
   ol {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   p,
@@ -30,7 +30,13 @@ const Article = styled.article`
   }
 
   a:hover {
-    color: var(--red);
+    color: var(--blue);
+  }
+
+  @media screen and (max-width: 834px) {
+    .image {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
