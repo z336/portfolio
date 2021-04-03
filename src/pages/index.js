@@ -22,6 +22,7 @@ const StyledArticle = styled(Article)`
     ul {
       display: flex;
       list-style: none;
+      margin-bottom: 0;
       @media (max-width: 834px) {
         flex-direction: column;
       }
@@ -47,7 +48,7 @@ const StyledLink = styled(Link)`
 export default function IndexPage() {
   return (
     <>
-      <SEO title="Jon Coleman's personal portfolio and blog" />
+      <SEO title="Home" />
       <StyledArticle>
         <div className="cta">
           <StyledHeader>

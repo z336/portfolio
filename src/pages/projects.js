@@ -105,7 +105,7 @@ export const pageQuery = graphql`
             tags
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.5)
+                gatsbyImageData(placeholder: BLURRED)
               }
             }
           }
