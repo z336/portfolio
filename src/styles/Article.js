@@ -28,8 +28,8 @@ const Article = styled.article`
   a:hover {
     background: var(--black);
     color: var(--white);
-    padding: 0 0.5rem;
-    margin: 0 -0.5rem;
+    padding: 0 0.5rem 0.25rem 0.5rem;
+    margin: 0 -0.5rem -0.25rem -0.5rem;
   }
 
   .arrows > a:hover {
@@ -41,9 +41,19 @@ const Article = styled.article`
     border: 0.5rem solid;
   }
 
+  .small-image {
+    border: 0.2rem solid;
+  }
+
   @media screen and (max-width: 834px) {
     .image {
       margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 834px) {
+    .image {
+      margin-bottom: 1rem;
     }
   }
 `;

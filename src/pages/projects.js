@@ -7,6 +7,27 @@ import Article from '../styles/Article';
 import Header from '../styles/Header';
 
 const StyledArticle = styled(Article)`
+  .post {
+    border-bottom: 0.2rem solid var(--black);
+  }
+
+  .intro {
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    li {
+      font-size: 0.9rem;
+      padding-right: 1.5rem;
+      :last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
   p {
     max-width: 55ch;
   }
@@ -15,30 +36,40 @@ const StyledArticle = styled(Article)`
     text-decoration: none;
   }
 
-  ul {
-    list-style: none;
-    li {
-      border-bottom: 4px solid;
-      margin-bottom: 3rem;
-      padding-bottom: 3rem;
+  @media (min-width: 1000px) {
+    .post {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 4px solid var(--black);
       :last-child {
-        border-bottom: 0;
         margin-bottom: 0;
         padding-bottom: 0;
+        border-bottom: 0;
       }
     }
 
-    @media (min-width: 834px) {
-      li {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        gap: 3rem;
+    .text {
+      display: flex;
+      flex-direction: column;
+      ul {
+        margin-top: 3rem;
       }
     }
+  }
 
-    small {
-      padding-right: 1rem;
-      opacity: 0.6;
+  @media (max-width: 1000px) {
+    .post {
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 4px solid var(--black);
+      :last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
     }
   }
 `;
@@ -53,31 +84,34 @@ export default function ProjectIndex({ data }) {
         <h1>Projects</h1>
       </Header>
       <StyledArticle>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam
-          nisi veniam suscipit eligendi illo perspiciatis.
-        </p>
-        <ul>
-          {posts.map(({ node: post }) => (
-            <li key={post.id}>
-              <div>
-                <GatsbyImage
-                  image={post.frontmatter.img.childImageSharp.gatsbyImageData}
-                  alt={post.frontmatter.alt}
-                ></GatsbyImage>
-              </div>
-              <div className="text">
-                <h2>
-                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-                </h2>
-                <p>{post.frontmatter.description}</p>
+        <div className="intro">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            numquam nisi veniam suscipit eligendi illo perspiciatis.
+          </p>
+        </div>
+        {posts.map(({ node: post }) => (
+          <div key={post.id} className="post">
+            <div>
+              <GatsbyImage
+                image={post.frontmatter.img.childImageSharp.gatsbyImageData}
+                alt={post.frontmatter.alt}
+                className="image small-image"
+              ></GatsbyImage>
+            </div>
+            <div className="text">
+              <h2>
+                <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
+              </h2>
+              <p>{post.frontmatter.description}</p>
+              <ul>
                 {post.frontmatter.tags.map((tag) => {
-                  return <small>{tag}</small>;
+                  return <li>{tag}</li>;
                 })}
-              </div>
-            </li>
-          ))}
-        </ul>
+              </ul>
+            </div>
+          </div>
+        ))}
       </StyledArticle>
     </>
   );
@@ -97,7 +131,11 @@ export const pageQuery = graphql`
             description
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED)
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  layout: FULL_WIDTH
+                  aspectRatio: 1.5
+                )
               }
             }
             alt

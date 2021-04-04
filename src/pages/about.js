@@ -24,7 +24,7 @@ export default function About() {
         <StaticImage
           src="../assets/images/jon.png"
           alt="code"
-          className="large-image"
+          className="large-image image"
           placeholder="blurred"
         />
         <div>
