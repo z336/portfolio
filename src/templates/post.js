@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { MDXProvider } from '@mdx-js/react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import HelmetTemplate from '../components/SEO';
 import styled from 'styled-components';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import Article from '../styles/Article';
@@ -53,6 +54,7 @@ export default function PostTemplate({ data: { mdx } }) {
 
   return (
     <>
+      <HelmetTemplate title={title} />
       <MDXProvider components={shortcodes}>
         <Heading>
           <h1>{title}</h1>

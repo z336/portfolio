@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import SEO from '../components/SEO';
+import HelmetTemplate from '../components/SEO';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 
@@ -80,7 +80,7 @@ export default function ProjectIndex({ data }) {
 
   return (
     <>
-      <SEO title="Projects" />
+      <HelmetTemplate title="Projects" />
       <Heading>
         <h1>Projects</h1>
       </Heading>

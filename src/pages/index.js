@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import SEO from '../components/SEO';
+import HelmetTemplate from '../components/SEO';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 
@@ -34,11 +34,18 @@ const StyledArticle = styled(Article)`
         }
       }
     }
+    @media screen and (max-width: 1200px) {
+      padding-left: 1rem;
+    }
   }
 `;
 
 const StyledHeading = styled(Heading)`
   padding-left: 2rem;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 1rem;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -48,7 +55,7 @@ const StyledLink = styled(Link)`
 export default function IndexPage() {
   return (
     <>
-      <SEO title="Home" />
+      <HelmetTemplate title="Home" />
       <StyledArticle>
         <div className="cta">
           <StyledHeading>

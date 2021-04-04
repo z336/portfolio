@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import SEO from '../components/SEO';
+import HelmetTemplate from '../components/SEO';
 import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 
@@ -16,7 +16,7 @@ const StyledArticle = styled(Article)`
 export default function About() {
   return (
     <>
-      <SEO title="About" />
+      <HelmetTemplate title="About" />
       <Heading>
         <h1>About</h1>
       </Heading>
