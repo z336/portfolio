@@ -82,15 +82,6 @@ export default function About() {
             </li>
             <li>
               <a
-                href="https://dribbble.com/z336"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Dribbble
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.linkedin.com/in/jon-coleman-837186104/"
                 target="_blank"
                 rel="noopener noreferrer"
