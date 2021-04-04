@@ -6,7 +6,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import styled from 'styled-components';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import Article from '../styles/Article';
-import Header from '../styles/Header';
+import Heading from '../styles/Heading';
 
 const ImageArticle = styled(Article)`
   max-width: 100ch;
@@ -54,9 +54,9 @@ export default function PostTemplate({ data: { mdx } }) {
   return (
     <>
       <MDXProvider components={shortcodes}>
-        <Header>
+        <Heading>
           <h1>{title}</h1>
-        </Header>
+        </Heading>
         <ImageArticle>
           <GatsbyImage
             image={image}

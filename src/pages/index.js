@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Article from '../styles/Article';
-import Header from '../styles/Header';
+import Heading from '../styles/Heading';
 
 const StyledArticle = styled(Article)`
   .cta {
@@ -37,7 +37,7 @@ const StyledArticle = styled(Article)`
   }
 `;
 
-const StyledHeader = styled(Header)`
+const StyledHeading = styled(Heading)`
   padding-left: 2rem;
 `;
 
@@ -51,9 +51,9 @@ export default function IndexPage() {
       <SEO title="Home" />
       <StyledArticle>
         <div className="cta">
-          <StyledHeader>
+          <StyledHeading>
             <h1>Jon Coleman</h1>
-          </StyledHeader>
+          </StyledHeading>
           <div className="text">
             <h2>Front-End Designer</h2>
             <p>

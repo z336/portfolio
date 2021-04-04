@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Article from '../styles/Article';
-import Header from '../styles/Header';
+import Heading from '../styles/Heading';
 
 const StyledArticle = styled(Article)`
   @media (min-width: 834px) {
@@ -17,9 +17,9 @@ export default function About() {
   return (
     <>
       <SEO title="About" />
-      <Header>
+      <Heading>
         <h1>About</h1>
-      </Header>
+      </Heading>
       <StyledArticle>
         <StaticImage
           src="../assets/images/jon.png"

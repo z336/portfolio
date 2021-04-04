@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Article from '../styles/Article';
-import Header from '../styles/Header';
+import Heading from '../styles/Heading';
 
 const StyledArticle = styled(Article)`
   .post {
@@ -81,9 +81,9 @@ export default function ProjectIndex({ data }) {
   return (
     <>
       <SEO title="Projects" />
-      <Header>
+      <Heading>
         <h1>Projects</h1>
-      </Header>
+      </Heading>
       <StyledArticle>
         <div className="intro">
           <p>
