@@ -8,7 +8,7 @@ import Heading from '../styles/Heading';
 
 const StyledArticle = styled(Article)`
   .post {
-    border-bottom: 0.2rem solid var(--black);
+    border-bottom: 0.2rem solid;
   }
 
   .intro {
@@ -44,7 +44,6 @@ const StyledArticle = styled(Article)`
       gap: 3rem;
       margin-bottom: 4rem;
       padding-bottom: 4rem;
-      border-bottom: 4px solid;
       :last-child {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -64,11 +63,9 @@ const StyledArticle = styled(Article)`
   @media (max-width: 1000px) {
     .post {
       margin-bottom: 3rem;
-      padding-bottom: 1rem;
-      border-bottom: 4px solid var(--black);
+      padding-bottom: 2rem;
       :last-child {
         margin-bottom: 2rem;
-        padding-bottom: 0;
         border-bottom: 0;
       }
     }
