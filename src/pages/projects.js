@@ -44,7 +44,7 @@ const StyledArticle = styled(Article)`
       gap: 3rem;
       margin-bottom: 4rem;
       padding-bottom: 4rem;
-      border-bottom: 4px solid var(--black);
+      border-bottom: 4px solid;
       :last-child {
         margin-bottom: 0;
         padding-bottom: 0;

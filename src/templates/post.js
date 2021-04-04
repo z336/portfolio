@@ -38,6 +38,7 @@ const StyledArticle = styled(Article)`
   }
 
   .arrows {
+    padding-bottom: 3rem;
     font-size: 2rem;
     color: currentColor;
   }

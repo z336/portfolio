@@ -44,6 +44,45 @@ body {
   color: var(--black);
   font-family: var(--body-font);
   overflow-y: scroll;
+
+  nav {
+    a:hover,
+    .active {
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+  a:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  .arrows > a:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+body.dark {
+  background: var(--black);
+  color: var(--white);
+
+  nav {
+    a:hover,
+    .active {
+      background: var(--white);
+      color: var(--black);
+    }
+  }
+  a:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+
+  .arrows > a:hover {
+    background: var(--black);
+    color: var(--white);
+  }
 }
 
 h1,
