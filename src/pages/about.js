@@ -48,8 +48,8 @@ export default function About() {
             I got my first job in technology {new Date().getFullYear() - 2015}{' '}
             years ago and haven't looked back. I became particularly interested
             in front-end development, which also led to an appreciation of
-            design and aesthetics. I feel the web should be accessible for all,
-            a joy to use, and enhance our lives wherever possible. When I'm not
+            design and usability. I feel the web should be accessible for all, a
+            joy to use, and enhance our lives wherever possible. When I'm not
             working on dev or design I love to get outside and hike, hit the
             streets on my bike, or occasionally make noise in punk rock bands.
           </p>
