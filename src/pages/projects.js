@@ -20,10 +20,11 @@ const StyledArticle = styled(Article)`
     display: flex;
     margin: 0;
     li {
-      font-size: 0.9rem;
-      padding-right: 1.5rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.115rem;
+      margin-right: 1.5rem;
       :last-child {
-        padding-right: 0;
+        margin-right: 0;
       }
     }
   }
