@@ -65,9 +65,8 @@ export default function IndexPage() {
           <div className="text">
             <h2>Front-End Designer</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus nemo non corrupti doloremque ratione neque? Illum
-              beatae itaque aliquam nulla molestiae!
+              Designer & developer who is passionate about UX/UI design,
+              front-end development, accessibility, and diversity.
             </p>
             <ul>
               <li>

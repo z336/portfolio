@@ -8,7 +8,7 @@ const Article = styled.article`
   p,
   ul,
   ol {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   p,
@@ -22,7 +22,7 @@ const Article = styled.article`
   h4,
   h5,
   h6 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   a:hover {
