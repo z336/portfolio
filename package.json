@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-v2",
+  "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "portfolioV2",
+  "description": "portfolio",
   "author": "jon",
   "keywords": [
     "gatsby"
@@ -37,6 +37,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "sass": "^1.32.8",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.3"
   }
 }
