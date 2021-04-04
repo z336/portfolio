@@ -67,7 +67,7 @@ const StyledArticle = styled(Article)`
       padding-bottom: 1rem;
       border-bottom: 4px solid var(--black);
       :last-child {
-        margin-bottom: 0;
+        margin-bottom: 2rem;
         padding-bottom: 0;
         border-bottom: 0;
       }
