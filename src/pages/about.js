@@ -56,9 +56,9 @@ export default function About() {
           <h2>Skills</h2>
           <ul>
             <li>
-              Modern front-end web development with HTML, CSS, and JavaScript
+              Front-end web development with good ol' HTML, CSS, and JavaScript
             </li>
-            <li>React, Gatsby, and Next</li>
+            <li>React, Gatsby, and Next.js</li>
             <li>UI design with Adobe XD and Figma</li>
             <li>Responsive and mobile first design</li>
             <li>Technical writing</li>
