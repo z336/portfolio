@@ -11,6 +11,13 @@ const Article = styled.article`
     margin-bottom: 1.5rem;
   }
 
+  li {
+    margin-bottom: 0.5rem;
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
   p,
   li {
     line-height: 1.8rem;

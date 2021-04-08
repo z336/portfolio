@@ -23,6 +23,7 @@ const StyledArticle = styled(Article)`
       font-size: 0.8rem;
       letter-spacing: 0.115rem;
       margin-right: 1.5rem;
+      margin-bottom: 0;
       :last-child {
         margin-right: 0;
       }

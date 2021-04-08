@@ -18,6 +18,9 @@ const StyledArticle = styled(Article)`
   margin: 0 auto;
   max-width: 55ch;
   padding: 0 1rem 3rem 1rem;
+  @media (max-width: 1200px) {
+    padding-bottom: 6rem;
+  }
 
   ol,
   ul {

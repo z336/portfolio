@@ -13,6 +13,10 @@ const StyledHeader = styled.header`
   }
   .header-links {
     padding-top: 0.125rem;
+    :hover {
+      background-color: transparent;
+      color: currentColor;
+    }
   }
 
   @media screen and (max-width: 1200px) {
