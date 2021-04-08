@@ -24,10 +24,6 @@ const StyledArticle = styled(Article)`
     padding-left: 2em;
   }
 
-  img:first-child {
-    max-width: 100ch;
-  }
-
   a:hover {
     padding: 0;
     margin: 0;
@@ -38,7 +34,6 @@ const StyledArticle = styled(Article)`
   }
 
   .arrows {
-    padding-bottom: 3rem;
     font-size: 2rem;
     color: currentColor;
   }

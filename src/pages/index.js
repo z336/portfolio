@@ -41,7 +41,7 @@ const StyledArticle = styled(Article)`
 `;
 
 const StyledHeading = styled(Heading)`
-  padding-bottom: 0.65rem;
+  padding-bottom: 0.25rem;
   padding-left: 2rem;
 
   @media screen and (max-width: 1200px) {

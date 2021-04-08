@@ -58,8 +58,8 @@ export default function About() {
             <li>
               Front-end web development with good ol' HTML, CSS, and JavaScript
             </li>
-            <li>React, Gatsby, and Next.js</li>
             <li>UI design with Adobe XD and Figma</li>
+            <li>React, Gatsby, and Next.js</li>
             <li>Responsive and mobile first design</li>
             <li>Technical writing</li>
           </ul>

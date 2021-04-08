@@ -126,11 +126,7 @@ export const pageQuery = graphql`
             description
             img {
               childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  layout: FULL_WIDTH
-                  aspectRatio: 1.5
-                )
+                gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
               }
             }
             alt
