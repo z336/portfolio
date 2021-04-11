@@ -85,6 +85,30 @@ body.dark {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  body.dark {
+    background: var(--black);
+    color: var(--white);
+
+    nav {
+      a:hover,
+      .active {
+        background: var(--white);
+        color: var(--black);
+      }
+    }
+    a:hover {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .arrows > a:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+}
+
 h1,
 header {
   font-family: var(--header-font);
