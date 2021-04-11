@@ -14,7 +14,7 @@ const StyledArticle = styled(Article)`
   @media (min-width: 834px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
       'image text'
       ' . text';
