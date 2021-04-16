@@ -15,6 +15,13 @@ const StyledArticle = styled(Article)`
     margin-bottom: 3rem;
   }
 
+  .image-link {
+    :hover {
+      background-color: transparent;
+      color: currentColor;
+    }
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -89,11 +96,13 @@ export default function ProjectIndex({ data }) {
         {posts.map(({ node: post }) => (
           <div key={post.id} className="post">
             <div>
-              <GatsbyImage
-                image={post.frontmatter.img.childImageSharp.gatsbyImageData}
-                alt={post.frontmatter.alt}
-                className="image small-image"
-              ></GatsbyImage>
+              <Link to={post.fields.slug} className="image-link" tabIndex="-1">
+                <GatsbyImage
+                  image={post.frontmatter.img.childImageSharp.gatsbyImageData}
+                  alt={post.frontmatter.alt}
+                  className="image small-image"
+                ></GatsbyImage>
+              </Link>
             </div>
             <div className="text">
               <h2>
