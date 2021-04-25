@@ -10,13 +10,13 @@ import Article from '../styles/Article';
 import Heading from '../styles/Heading';
 
 const ImageArticle = styled(Article)`
-  max-width: 100ch;
+  max-width: 40rem;
   margin: 0 auto;
 `;
 
 const StyledArticle = styled(Article)`
   margin: 0 auto;
-  max-width: 55ch;
+  max-width: var(--measure);
   padding: 0 1rem 3rem 1rem;
   @media (max-width: 1200px) {
     padding-bottom: 6rem;
@@ -24,7 +24,7 @@ const StyledArticle = styled(Article)`
 
   ol,
   ul {
-    padding-left: 2em;
+    padding-left: 2rem;
   }
 
   a:hover {

@@ -11,12 +11,12 @@ const StyledArticle = styled(Article)`
   }
 
   .text {
-    padding: 1.5rem 0 1.5rem 2rem;
+    padding: 1.5rem 2rem;
     h2 {
       margin-bottom: 1rem;
     }
     p {
-      max-width: 55ch;
+      max-width: var(--measure);
       margin-bottom: 1.5rem;
     }
     ul {
@@ -36,6 +36,7 @@ const StyledArticle = styled(Article)`
     }
     @media screen and (max-width: 1200px) {
       padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 `;

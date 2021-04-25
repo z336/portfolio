@@ -38,7 +38,7 @@ const StyledArticle = styled(Article)`
   }
 
   p {
-    max-width: 55ch;
+    max-width: var(--measure);
   }
 
   a {
