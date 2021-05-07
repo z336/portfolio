@@ -3,9 +3,20 @@ import 'normalize.css';
 import '../styles/GlobalStyles.scss';
 import styled from 'styled-components';
 import { ThemeProvider } from '../utils/useTheme';
-import SiteContainer from '../styles/Grids';
 import Header from './Header';
 import Footer from './Footer';
+
+const SiteLayout = styled.div`
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+`;
 
 const Main = styled.main`
   grid-area: main;
@@ -16,11 +27,11 @@ const Main = styled.main`
 export default function Layout({ children }) {
   return (
     <ThemeProvider>
-      <SiteContainer>
+      <SiteLayout>
         <Header />
         <Main>{children}</Main>
         <Footer />
-      </SiteContainer>
+      </SiteLayout>
     </ThemeProvider>
   );
 }
