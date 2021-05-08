@@ -26,7 +26,7 @@ export default function HelmetTemplate({
       {/* Meta Tags */}
       <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       />
       <meta charSet="utf-8" />
       <meta name="description" content={site.siteMetadata.description} />
