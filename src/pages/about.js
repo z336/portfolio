@@ -11,6 +11,11 @@ const StyledArticle = styled(Article)`
     padding-left: 2em;
   }
 
+  a:hover {
+    padding: 0;
+    margin: 0;
+  }
+
   @media (min-width: 834px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

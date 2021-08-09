@@ -91,7 +91,7 @@ export default function ProjectIndex({ data }) {
       </Heading>
       <StyledArticle>
         <div className="intro">
-          <p>Here are the latest projects I've been able to work on.</p>
+          <p>A few of the projects I've built.</p>
         </div>
         {posts.map(({ node: post }) => (
           <div key={post.id} className="post">

@@ -20,24 +20,20 @@
   --body-font: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
+  --t0: 1.953rem;
+  --t1: 1.563rem;
+  --t2: 1.25rem;
+  --t3: 1rem;
+  --t4: 0.8rem;
+  --t5: 0.64rem;
+  --t6: 0.512rem;
+  font-size: calc(1rem + 0.5vw);
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(18px + 2 * ((100vw - 320px) / 680));
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  html {
-    font-size: 24px;
-  }
 }
 
 body {
@@ -153,15 +149,27 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: var(--t0);
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: var(--t1);
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: var(--t2);
+}
+
+h4 {
+  font-size: var(--t3);
+}
+
+h5 {
+  font-size: var(--t4);
+}
+
+h6 {
+  font-size: var(--t5);
 }
 
 a {
