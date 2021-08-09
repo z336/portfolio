@@ -62,6 +62,11 @@ body {
     background: var(--white);
     color: var(--black);
   }
+
+  ::selection {
+    background-color: var(--black);
+    color: var(--white);
+  }
 }
 
 body.dark {
@@ -83,6 +88,11 @@ body.dark {
   .arrows > a:hover {
     background: var(--black);
     color: var(--white);
+  }
+
+  ::selection {
+    background-color: var(--white);
+    color: var(--black);
   }
 }
 
@@ -106,6 +116,11 @@ body.dark {
     .arrows > a:hover {
       background: var(--black);
       color: var(--white);
+    }
+
+    ::selection {
+      background-color: var(--white);
+      color: var(--black);
     }
   }
 }
