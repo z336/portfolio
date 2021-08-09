@@ -55,16 +55,14 @@ export default function About() {
           </p>
           <h2>Skills</h2>
           <ul>
-            <li>
-              Front-end web development with good ol' HTML, CSS, and JavaScript
-            </li>
-            <li>UI design with Adobe XD and Figma</li>
-            <li>React, Gatsby, and Next.js</li>
+            <li>Front-end web development with HTML, CSS, and JavaScript</li>
+            <li>UI design with Figma</li>
+            <li>Experience with React, Gatsby, and Next.js</li>
             <li>Responsive and mobile first design</li>
+            <li>Git</li>
             <li>Technical writing</li>
           </ul>
           <h2>Contact</h2>
-          <p>Feel free to send an email, or check out any of these spaces:</p>
           <ul>
             <li>
               <a href="mailto:jcoleman1388@gmail.com?subject=Saw Your Site">
