@@ -35,10 +35,15 @@ const StyledNav = styled.nav`
     ul {
       justify-content: space-around;
     }
+    a:hover,
+    .active {
+      background-color: var(--white);
+      color: var(--black);
+    }
   }
 
   @media screen and (max-width: 834px) {
-    font-size: 1.125rem;
+    font-size: var(--t2);
     li {
       padding: 0 0.25rem;
       :first-child {

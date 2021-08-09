@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   grid-row: 3/4;
   background: var(--black);
   color: var(--white);
-  font-size: 1.25rem;
+  font-size: var(--t2);
 
   a {
     text-decoration: none;

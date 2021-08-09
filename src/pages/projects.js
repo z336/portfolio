@@ -27,7 +27,7 @@ const StyledArticle = styled(Article)`
     display: flex;
     margin: 0;
     li {
-      font-size: 0.8rem;
+      font-size: var(--t4);
       letter-spacing: 0.115rem;
       margin-right: 1.5rem;
       margin-bottom: 0;

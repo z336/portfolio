@@ -44,7 +44,7 @@ export default function About() {
       <StyledArticle>
         <StaticImage
           src="../assets/images/jon.png"
-          alt="code"
+          alt="Jon's head shot"
           className="large-image image"
           placeholder="blurred"
         />

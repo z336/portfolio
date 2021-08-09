@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   grid-area: header;
   display: flex;
   padding: 2rem 1rem 0.5rem 1rem;
-  font-size: 1.5rem;
+  font-size: var(--t1);
   a {
     text-decoration: none;
   }

@@ -41,7 +41,7 @@ const StyledArticle = styled(Article)`
   }
 
   .arrows {
-    font-size: 2rem;
+    font-size: var(--t0);
     color: currentColor;
   }
 `;

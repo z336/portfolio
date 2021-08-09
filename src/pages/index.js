@@ -51,7 +51,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledLink = styled(Link)`
-  font-size: 1.25rem;
+  font-size: var(--t2);
 `;
 
 export default function IndexPage() {
