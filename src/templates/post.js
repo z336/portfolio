@@ -36,6 +36,10 @@ const StyledArticle = styled(Article)`
     margin-bottom: 0;
   }
 
+  img {
+    border: 0.2rem solid;
+  }
+
   .arrows {
     font-size: 2rem;
     color: currentColor;
