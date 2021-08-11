@@ -67,9 +67,9 @@ export default function About() {
             <li>Modern Web Design & a11y</li>
             <li>Photoshop, Adobe XD, & Figma</li>
             <li>JAMstack, GraphQL, Static Site Generators</li>
-            <li>Technical Writing</li>
-            <li>WordPress, Netflify, & general CMS experience</li>
+            <li>WordPress, Netlify, & general CMS experience</li>
             <li>Git, NPM, modern tooling</li>
+            <li>Technical Writing</li>
           </ul>
           <h2>Contact</h2>
           <ul>
