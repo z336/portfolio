@@ -52,20 +52,24 @@ export default function About() {
           <p>
             I got my first job in technology {new Date().getFullYear() - 2015}{' '}
             years ago and haven't looked back. I became particularly interested
-            in front-end development, which also led to an appreciation of
-            design and usability. I feel the web should be accessible for all, a
-            joy to use, and enhance our lives wherever possible. When I'm not
-            working on dev or design I love to get outside and hike, hit the
-            streets on my bike, or occasionally make noise in punk rock bands.
+            in front-end development, which also led to an appreciation and
+            focus on design and usability. I feel the web should be accessible
+            for all, a joy to use, and enhance our lives wherever possible. When
+            I'm not working on dev or design I love to get outside and hike, hit
+            the streets on my bike, or occasionally make noise in punk rock
+            bands.
           </p>
           <h2>Skills</h2>
           <ul>
-            <li>Front-end web development with HTML, CSS, and JavaScript</li>
-            <li>UI design with Figma</li>
-            <li>Experience with React, Gatsby, and Next.js</li>
-            <li>Responsive and mobile first design</li>
-            <li>Git</li>
-            <li>Technical writing</li>
+            <li>Semantic HTML & Accessibility</li>
+            <li>CSS, Sass, & Styled Components</li>
+            <li>Javascript, React & Gatsby</li>
+            <li>Modern Web Design & a11y</li>
+            <li>Photoshop, Adobe XD, & Figma</li>
+            <li>JAMstack, GraphQL, Static Site Generators</li>
+            <li>Technical Writing</li>
+            <li>WordPress, Netflify, & general CMS experience</li>
+            <li>Git, NPM, modern tooling</li>
           </ul>
           <h2>Contact</h2>
           <ul>
